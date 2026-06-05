@@ -195,6 +195,7 @@ function setLang(l) {
   document.documentElement.lang = {ko:'ko',en:'en',ja:'ja'}[l];
   document.body.className = 'lang-' + l;
   document.querySelectorAll('[data-i18n]').forEach(el => {
+    if (el.hasAttribute('data-notrans')) return;
     const v = T[l][el.getAttribute('data-i18n')];
     if (v != null) el.innerHTML = v;
   });

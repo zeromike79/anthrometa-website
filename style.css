@@ -39,11 +39,11 @@ body.lang-ja{font-family:'Noto Sans JP','Noto Sans KR',sans-serif}
 /* ── HEADER ── */
 header{position:fixed;top:0;left:0;right:0;z-index:1000;height:68px;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;transition:var(--ease)}
 header.scrolled{background:rgba(7,19,26,0.90);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(29,181,197,0.1);box-shadow:0 4px 30px rgba(0,0,0,0.4)}
-.logo{text-decoration:none;display:inline-flex;align-items:center;gap:7px}
-.logo-mark{height:1.85rem;width:auto;display:flex;align-items:center;flex-shrink:0}
-.logo-mark svg{height:100%;width:auto}
-.l-anthro{font-family:'Montserrat',sans-serif;font-weight:800;color:#fff;font-size:1.45rem;letter-spacing:-.5px;line-height:1}
-.l-meta{font-family:'Montserrat',sans-serif;font-weight:300;color:var(--teal);font-size:.8rem;letter-spacing:1.2px;align-self:flex-end;padding-bottom:.16rem}
+.logo{text-decoration:none;display:inline-flex;align-items:center;gap:9px}
+.logo-mark{height:2rem;width:2rem;flex-shrink:0}
+.logo-mark svg{width:100%;height:100%}
+.l-anthro{font-family:'Montserrat',sans-serif;font-weight:800;color:#fff;font-size:1.38rem;letter-spacing:-.5px;line-height:1}
+.l-meta{font-family:'Montserrat',sans-serif;font-weight:300;color:var(--teal);font-size:.78rem;letter-spacing:1.5px;text-transform:lowercase;align-self:flex-end;padding-bottom:.15rem}
 
 .nav-links{display:flex;align-items:center;gap:2.2rem}
 .nav-links a{color:var(--txt2);text-decoration:none;font-size:.88rem;font-weight:500;position:relative;transition:var(--ease)}
@@ -211,10 +211,10 @@ section{padding:5.5rem 2rem}
 /* ── FOOTER ── */
 footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,197,0.1)}
 .fi2{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
-.flogo{display:inline-flex;align-items:center;gap:6px}
-.flogo .logo-mark{height:1.4rem}
-.flogo .l-anthro{font-family:'Montserrat',sans-serif;font-weight:800;color:#fff;font-size:1.1rem;letter-spacing:-.5px;line-height:1}
-.flogo .l-meta{font-family:'Montserrat',sans-serif;font-weight:300;color:var(--teal);font-size:.62rem;letter-spacing:1.2px;align-self:flex-end;padding-bottom:.1rem}
+.flogo{display:inline-flex;align-items:center;gap:7px}
+.flogo .logo-mark{width:1.55rem;height:1.55rem}
+.flogo .l-anthro{font-family:'Montserrat',sans-serif;font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-.5px;line-height:1}
+.flogo .l-meta{font-family:'Montserrat',sans-serif;font-weight:300;color:var(--teal);font-size:.6rem;letter-spacing:1.5px;text-transform:lowercase;align-self:flex-end;padding-bottom:.08rem}
 .fmid{color:var(--txt3);font-size:.78rem;line-height:1.7;text-align:center}
 .fcopy{color:var(--txt3);font-size:.75rem}
 
