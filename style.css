@@ -221,6 +221,39 @@ footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,1
 /* ── YELLOW ACCENT DIVIDER ── */
 .y-accent{display:inline-block;width:40px;height:3px;background:var(--yellow);border-radius:2px;margin:1rem 0}
 
+/* ── WHY CARDS ── */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.3rem}
+.why-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:1.9rem;transition:var(--ease);backdrop-filter:blur(10px);display:flex;flex-direction:column;gap:.8rem}
+.why-card:hover{border-color:rgba(29,181,197,.32);transform:translateY(-5px);box-shadow:0 18px 44px rgba(29,181,197,.11)}
+.why-ico{width:52px;height:52px;background:rgba(29,181,197,.1);border:1px solid rgba(29,181,197,.2);border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.why-card h3{font-size:1.05rem;font-weight:700}
+.why-card p{font-size:.87rem;color:var(--txt2);line-height:1.75;margin:0}
+
+/* ── PROCESS STEPS ── */
+.proc-wrap{background:var(--bg2);padding:5.5rem 2rem}
+.proc-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.proc-step{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem 1.6rem;backdrop-filter:blur(10px);transition:var(--ease)}
+.proc-step:hover{border-color:rgba(29,181,197,.3);box-shadow:0 16px 40px rgba(29,181,197,.1)}
+.proc-num{font-family:'Montserrat',sans-serif;font-size:2.8rem;font-weight:900;color:rgba(29,181,197,.18);line-height:1;margin-bottom:.9rem;display:block}
+.proc-step h3{font-size:1rem;font-weight:700;margin-bottom:.6rem;color:var(--txt)}
+.proc-step p{font-size:.87rem;color:var(--txt2);line-height:1.72}
+
+/* ── SERVICE FEATURE LIST ── */
+.sc-features{list-style:none;margin-top:1.1rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;gap:.48rem}
+.sc-features li{font-size:.82rem;color:var(--txt2);display:flex;align-items:flex-start;gap:.5rem;line-height:1.55}
+.sc-features li::before{content:'→';color:var(--teal);flex-shrink:0;font-weight:700;margin-top:.03rem}
+
+/* ── INDUSTRIES ── */
+.ind-grid{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:2rem}
+.ind-badge{background:rgba(29,181,197,.07);border:1px solid rgba(29,181,197,.16);border-radius:8px;padding:.48rem 1.1rem;font-size:.83rem;font-weight:600;color:rgba(97,225,238,.85);transition:var(--ease)}
+.ind-badge:hover{background:rgba(29,181,197,.16);color:var(--txt);transform:translateY(-2px)}
+
+/* ── CONTACT EXTRAS ── */
+.ct-extras{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-top:1.8rem}
+.ct-extra-card{background:rgba(29,181,197,.05);border:1px solid rgba(29,181,197,.12);border-radius:12px;padding:1.3rem;text-align:center}
+.ct-extra-title{font-size:.7rem;color:var(--txt3);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:.55rem}
+.ct-extra-val{font-size:.88rem;color:var(--txt2);line-height:1.7;font-weight:500;white-space:pre-line}
+
 /* ── REVEAL ── */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .reveal.vis{opacity:1;transform:translateY(0)}
