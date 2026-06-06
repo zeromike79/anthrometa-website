@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body class="lang-ko">
 
@@ -36,13 +36,13 @@
 </header>
 <nav class="mnav" id="mnav">
   <a href="index.html"    onclick="closeMenu()" data-page="index.html"    data-i18n="nav_home">홈</a>
+  <a href="quote.html"   onclick="closeMenu()" data-page="quote.html"   data-i18n="nav_quote" class="mnav-quote">견적문의</a>
   <a href="about.html"   onclick="closeMenu()" data-page="about.html"   data-i18n="nav_about">회사소개</a>
   <a href="services.html" onclick="closeMenu()" data-page="services.html" data-i18n="nav_services">서비스</a>
   <a href="clients.html"  onclick="closeMenu()" data-page="clients.html"  data-i18n="nav_clients">거래처</a>
   <a href="blog.html"    onclick="closeMenu()" data-page="blog.html"    data-i18n="nav_blog">블로그</a>
   <a href="qa.html"       onclick="closeMenu()" data-page="qa.html"       data-i18n="nav_qa">Q&amp;A</a>
   <a href="contact.html"  onclick="closeMenu()" data-page="contact.html"  data-i18n="nav_contact">문의하기</a>
-  <a href="quote.html"   onclick="closeMenu()" data-page="quote.html"   data-i18n="nav_quote">견적문의</a>
 </nav>
 
 <div class="page-banner">
@@ -70,6 +70,7 @@
           <li data-i18n="s1b3">데이터 마이그레이션 및 연동</li>
           <li data-i18n="s1b4">직원 교육 및 운영 지원</li>
         </ul>
+        <a href="contact.html" class="sc-cta" data-i18n="sc_cta">이 서비스 문의하기 →</a>
       </div>
       <div class="sc reveal d2">
         <img class="sc-img" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=700&q=80" alt="홈페이지 제작" loading="lazy">
@@ -87,6 +88,7 @@
           <li data-i18n="s2b3">SEO 최적화 및 성능 튜닝</li>
           <li data-i18n="s2b4">CMS 연동 및 콘텐츠 관리 시스템</li>
         </ul>
+        <a href="contact.html" class="sc-cta" data-i18n="sc_cta">이 서비스 문의하기 →</a>
       </div>
       <div class="sc reveal d3">
         <img class="sc-img" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=700&q=80" alt="카탈로그 디자인" loading="lazy">
@@ -104,6 +106,7 @@
           <li data-i18n="s3b3">디지털·인쇄 겸용 파일 제공</li>
           <li data-i18n="s3b4">다국어 버전 제작 가능</li>
         </ul>
+        <a href="contact.html" class="sc-cta" data-i18n="sc_cta">이 서비스 문의하기 →</a>
       </div>
       <div class="sc reveal d4">
         <img class="sc-img" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=700&q=80" alt="ISMS 컨설팅" loading="lazy">
@@ -121,6 +124,7 @@
           <li data-i18n="s4b3">임직원 정보보안 교육</li>
           <li data-i18n="s4b4">인증 심사 대응 및 사후 관리</li>
         </ul>
+        <a href="contact.html" class="sc-cta" data-i18n="sc_cta">이 서비스 문의하기 →</a>
       </div>
       <div class="sc reveal d5">
         <img class="sc-img" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=700&q=80" alt="AI 기반 솔루션" loading="lazy">
@@ -138,6 +142,7 @@
           <li data-i18n="s5b3">데이터 분석 및 시각화 시스템</li>
           <li data-i18n="s5b4">AI 도입 전략 컨설팅</li>
         </ul>
+        <a href="contact.html" class="sc-cta" data-i18n="sc_cta">이 서비스 문의하기 →</a>
       </div>
       <!-- 신규: 로컬 LLM AI 비즈니스 -->
       <div class="sc reveal d6">
@@ -156,6 +161,7 @@
           <li data-i18n="s6b3">사내 문서·DB 연동 RAG 시스템 구축</li>
           <li data-i18n="s6b4">완전 폐쇄망 운용 — 데이터 외부 유출 Zero</li>
         </ul>
+        <a href="contact.html" class="sc-cta" data-i18n="sc_cta">이 서비스 문의하기 →</a>
       </div>
     </div>
   </div>
@@ -211,10 +217,12 @@
       <span>AnthroMeta</span> &nbsp;|&nbsp;
       <span data-i18n="ft_loc">경기도 파주시</span> &nbsp;|&nbsp;
       <span data-i18n="ft_est">설립 2022년 4월</span> &nbsp;|&nbsp;
+      사업자 640-09-02416 &nbsp;|&nbsp;
+      📞 010-4745-6840 &nbsp;|&nbsp;
       <a href="mailto:info@anthrometa.com" style="color:var(--teal);text-decoration:none">info@anthrometa.com</a> &nbsp;|&nbsp;
       www.anthrometa.com
     </div>
-    <div class="fcopy">© 2024 AnthroMeta. <span data-i18n="ft_r">All rights reserved.</span></div>
+    <div class="fcopy">© 2026 AnthroMeta. <span data-i18n="ft_r">All rights reserved.</span></div>
   </div>
 </footer>
 

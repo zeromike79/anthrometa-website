@@ -2,7 +2,7 @@
 
 const T = {
   ko:{
-    nav_home:'홈', nav_about:'회사소개', nav_services:'서비스', nav_clients:'거래처', nav_blog:'블로그', nav_qa:'Q&A', nav_contact:'문의하기', nav_quote:'견적문의',
+    nav_home:'홈', nav_about:'회사소개', nav_services:'서비스', nav_clients:'거래처', nav_blog:'블로그', nav_qa:'Q&A', nav_contact:'문의하기', nav_quote:'견적문의', sc_cta:'이 서비스 문의하기 →',
     /* About */
     ab_tag:'ABOUT US', ab_title:'앤트로메타 소개', ab_sub:'기술로 비즈니스의 내일을 설계하는 IT 솔루션 전문기업',
     ab_mv_tag:'MISSION & VISION', ab_mv_title:'미션과 비전',
@@ -41,7 +41,7 @@ const T = {
     /* Hero */
     hero_badge:'IT 솔루션 전문기업 · 경기도 파주',
     hero_title:'기술로 비즈니스의<br>내일을 설계합니다',
-    hero_sub:'ERP · 홈페이지 · ISMS · AI 솔루션 전문기업',
+    hero_sub:'ERP · 홈페이지 · ISMS · AI · 로컬 LLM 솔루션 전문기업',
     hero_cta1:'서비스 보기', hero_cta2:'문의하기', hero_scroll:'SCROLL',
     /* About */
     about_tag:'회사 소개', about_title:'기술로 미래를 여는 기업',
@@ -200,7 +200,7 @@ const T = {
     ft_co:'앤트로메타', ft_loc:'경기도 파주시', ft_est:'설립 2022년 4월', ft_r:'All rights reserved.'
   },
   en:{
-    nav_home:'Home', nav_about:'About', nav_services:'Services', nav_clients:'Clients', nav_blog:'Blog', nav_qa:'Q&A', nav_contact:'Contact', nav_quote:'Get Quote',
+    nav_home:'Home', nav_about:'About', nav_services:'Services', nav_clients:'Clients', nav_blog:'Blog', nav_qa:'Q&A', nav_contact:'Contact', nav_quote:'Get Quote', sc_cta:'Inquire about this service →',
     ab_tag:'ABOUT US', ab_title:'About AnthroMeta', ab_sub:'The IT solutions company designing tomorrow\'s business through technology',
     ab_mv_tag:'MISSION & VISION', ab_mv_title:'Mission & Vision',
     ab_mission_h:'🎯 Mission', ab_mission_p:'We provide practical and sustainable IT solutions to help small and mid-sized enterprises achieve digital transformation and build stronger competitiveness.',
@@ -235,7 +235,7 @@ const T = {
     qt_submit:'Send Quote Request', qt_ok_t:'Quote Request Received!', qt_ok_p:'Our team will contact you within 24 hours.', qt_ok_btn:'Back to Home',
     hero_badge:'IT Solution Specialist · Paju, Gyeonggi',
     hero_title:"Designing Tomorrow's<br>Business with Technology",
-    hero_sub:'ERP · Web · ISMS · AI Solution Specialist',
+    hero_sub:'ERP · Web · ISMS · AI · Local LLM Specialist',
     hero_cta1:'View Services', hero_cta2:'Contact Us', hero_scroll:'SCROLL',
     about_tag:'About Us', about_title:'Building the Future with Technology',
     about_desc:'AnthroMeta is an IT solution specialist founded in 2022 in Paju, Gyeonggi. We support every stage of enterprise digital transformation — from ERP and website development to ISMS consulting and AI-powered solutions.',
@@ -365,7 +365,7 @@ const T = {
     ft_co:'AnthroMeta', ft_loc:'Paju, Gyeonggi', ft_est:'Est. April 2022', ft_r:'All rights reserved.'
   },
   ja:{
-    nav_home:'ホーム', nav_about:'会社紹介', nav_services:'サービス', nav_clients:'取引先', nav_blog:'ブログ', nav_qa:'Q&A', nav_contact:'お問い合わせ', nav_quote:'見積依頼',
+    nav_home:'ホーム', nav_about:'会社紹介', nav_services:'サービス', nav_clients:'取引先', nav_blog:'ブログ', nav_qa:'Q&A', nav_contact:'お問い合わせ', nav_quote:'見積依頼', sc_cta:'このサービスへお問い合わせ →',
     ab_tag:'ABOUT US', ab_title:'アンスロメタ紹介', ab_sub:'技術でビジネスの明日を設計するITソリューション専門企業',
     ab_mv_tag:'MISSION & VISION', ab_mv_title:'ミッションとビジョン',
     ab_mission_h:'🎯 ミッション', ab_mission_p:'中小・中堅企業が最新のIT技術によりデジタル変革を実現し、より高い競争力を身につけられるよう、実践的で持続可能なソリューションを提供します。',
@@ -400,7 +400,7 @@ const T = {
     qt_submit:'見積依頼を送る', qt_ok_t:'見積依頼を受け付けました！', qt_ok_p:'24時間以内に担当者よりご連絡いたします。', qt_ok_btn:'ホームに戻る',
     hero_badge:'ITソリューション専門企業 · 京畿道坡州市',
     hero_title:'テクノロジーでビジネスの<br>未来を設計します',
-    hero_sub:'ERP・ウェブ・ISMS・AIソリューション専門企業',
+    hero_sub:'ERP・ウェブ・ISMS・AI・ローカルLLMソリューション専門企業',
     hero_cta1:'サービスを見る', hero_cta2:'お問い合わせ', hero_scroll:'SCROLL',
     about_tag:'会社紹介', about_title:'テクノロジーで未来を切り拓く企業',
     about_desc:'アンスロメタは2022年に京畿道坡州市で設立されたITソリューション専門企業です。ERP構築からウェブサイト制作、ISMSコンサルティング、AIソリューションまで、企業のデジタルトランスフォーメーションを総合的に支援します。',
