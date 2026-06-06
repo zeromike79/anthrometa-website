@@ -490,8 +490,13 @@ footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,1
 .form-check-label:has(input:checked)::before{background:var(--teal);border-color:var(--teal)}
 .form-check-label::after{content:'✓';position:absolute;left:.72rem;top:50%;transform:translateY(-50%);width:18px;height:18px;text-align:center;line-height:18px;color:#fff;font-size:11px;font-weight:900;opacity:0;transition:opacity .15s ease}
 .form-check-label:has(input:checked)::after{opacity:1}
-.form-agree-label{display:flex;align-items:center;gap:.65rem;font-size:.8rem;color:var(--txt2);margin-bottom:1.3rem;cursor:pointer;line-height:1.6;background:rgba(29,181,197,0.04);border:1px solid rgba(29,181,197,0.12);border-radius:10px;padding:.85rem 1rem}
-.form-agree-label input{accent-color:var(--teal);flex-shrink:0;width:16px;height:16px;cursor:pointer}
+.form-agree-label{position:relative;display:flex;align-items:center;font-size:.8rem;color:var(--txt2);margin-bottom:1.3rem;cursor:pointer;line-height:1.6;background:rgba(29,181,197,0.04);border:1px solid rgba(29,181,197,0.14);border-radius:10px;padding:.85rem 1rem .85rem 2.8rem;transition:var(--ease)}
+.form-agree-label:has(input:checked){background:rgba(29,181,197,0.10);border-color:rgba(29,181,197,0.45)}
+.form-agree-label input{position:absolute;opacity:0;width:0;height:0}
+.form-agree-label::before{content:'';position:absolute;left:.9rem;top:50%;transform:translateY(-50%);width:20px;height:20px;border-radius:50%;border:2px solid rgba(29,181,197,0.4);background:transparent;transition:var(--ease);box-sizing:border-box}
+.form-agree-label:has(input:checked)::before{background:var(--teal);border-color:var(--teal)}
+.form-agree-label::after{content:'✓';position:absolute;left:.9rem;top:50%;transform:translateY(-50%);width:20px;height:20px;text-align:center;line-height:20px;color:#fff;font-size:12px;font-weight:900;opacity:0;transition:opacity .15s ease}
+.form-agree-label:has(input:checked)::after{opacity:1}
 .form-submit{width:100%;padding:1rem;background:var(--grad);border:none;border-radius:12px;font-size:.97rem;font-weight:700;color:#fff;cursor:pointer;transition:var(--ease);letter-spacing:.02em}
 .form-submit:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 12px 32px rgba(29,181,197,0.28)}
 .form-success{text-align:center;padding:2.5rem 1rem}
