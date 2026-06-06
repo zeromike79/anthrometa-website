@@ -39,13 +39,15 @@
   <a href="contact.html"  onclick="closeMenu()" data-page="contact.html"  data-i18n="nav_contact">문의하기</a>
 </nav>
 
+<!-- PAGE BANNER -->
 <div class="page-banner">
   <div class="stag" data-i18n="cl_tag">CLIENTS</div>
   <h1 data-i18n="cl_title">주요 거래처</h1>
   <p data-i18n="cl_desc">다양한 산업 분야의 기업들과 함께 성장하고 있습니다</p>
 </div>
 
-<section id="clients-page">
+<!-- STATS -->
+<section style="background:var(--bg2);padding:3.5rem 2rem">
   <div class="inner">
     <div class="stats reveal">
       <div class="statc">
@@ -57,27 +59,270 @@
         <div class="slbl" data-i18n="st2l">완료 프로젝트</div>
       </div>
       <div class="statc">
-        <div class="snum">5</div>
-        <div class="slbl" data-i18n="st3l">전문 서비스</div>
+        <div class="snum">5+</div>
+        <div class="slbl" data-i18n="st3l">주요 거래처</div>
       </div>
       <div class="statc">
         <div class="snum">100%</div>
         <div class="slbl" data-i18n="st4l">고객 만족</div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="cbadges reveal">
-      <div class="cbadge">노루홀딩스</div>
-      <div class="cbadge">㈜ 더기반</div>
-      <div class="cbadge">㈜ 기반테크</div>
-      <div class="cbadge">우영테크</div>
-      <div class="cbadge">㈜ 벗앤벗</div>
-      <div class="cbadge" data-i18n="cl_hosp">의료/병원 다수</div>
+<!-- REFERENCE CARDS -->
+<section id="clients-page">
+  <div class="inner">
+
+    <div class="sh reveal">
+      <div class="stag" data-i18n="ref_tag">REFERENCES</div>
+      <h2 class="st" data-i18n="ref_title">프로젝트 레퍼런스</h2>
+      <p class="sd" data-i18n="ref_desc">앤트로메타가 함께한 대표 프로젝트를 소개합니다</p>
     </div>
 
+    <!-- 01 노루홀딩스 -->
+    <div class="ref-card reveal">
+      <div class="ref-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+          alt="노루홀딩스 홈페이지 제작"
+          loading="lazy"
+        />
+        <div class="ref-img-overlay">
+          <span class="ref-num">01</span>
+          <span class="ref-cat-badge" data-i18n="rc1_cat">홈페이지 제작</span>
+        </div>
+      </div>
+      <div class="ref-body">
+        <div class="ref-tags-row">
+          <span class="ref-tag" data-i18n="rc1_t1">기업 홈페이지</span>
+          <span class="ref-tag" data-i18n="rc1_t2">반응형 디자인</span>
+          <span class="ref-tag" data-i18n="rc1_t3">SEO 최적화</span>
+        </div>
+        <h3 class="ref-name">노루홀딩스</h3>
+        <p class="ref-subtitle" data-i18n="rc1_sub">Corporate Website · 대기업 공식 홈페이지</p>
+        <p class="ref-desc" data-i18n="rc1_desc">
+          노루페인트·노루오토코팅 등 다수 계열사를 보유한 종합 지주회사 노루홀딩스의 공식 홈페이지를 기획·설계·구축하였습니다. 대기업의 브랜드 아이덴티티를 온라인에서 강력하게 표현하기 위해 고품격 UI/UX 디자인을 적용하였으며, PC·태블릿·모바일 전 기기 최적화 반응형 구조로 제작하였습니다. IR 자료, 뉴스룸, 그룹사 소개 등 풍부한 콘텐츠 구성과 함께 검색엔진 최적화(SEO)를 통해 온라인 가시성을 대폭 향상시켰습니다.
+        </p>
+        <ul class="ref-list">
+          <li data-i18n="rc1_l1">계열사 통합 브랜딩 페이지 기획 및 구축</li>
+          <li data-i18n="rc1_l2">반응형·모바일 퍼스트 디자인 적용</li>
+          <li data-i18n="rc1_l3">IR·뉴스룸·채용 전용 페이지 제작</li>
+          <li data-i18n="rc1_l4">페이지 속도 최적화 및 SEO 세팅</li>
+        </ul>
+      </div>
+    </div>
 
-    <div class="sh reveal" style="margin-top:3rem">
+    <!-- 02 더기반 -->
+    <div class="ref-card ref-card-reverse reveal">
+      <div class="ref-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80"
+          alt="더기반 영상 제작"
+          loading="lazy"
+        />
+        <div class="ref-img-overlay">
+          <span class="ref-num">02</span>
+          <span class="ref-cat-badge" data-i18n="rc2_cat">영상 제작</span>
+        </div>
+      </div>
+      <div class="ref-body">
+        <div class="ref-tags-row">
+          <span class="ref-tag" data-i18n="rc2_t1">기업 홍보 영상</span>
+          <span class="ref-tag" data-i18n="rc2_t2">촬영·편집</span>
+          <span class="ref-tag" data-i18n="rc2_t3">모션 그래픽</span>
+        </div>
+        <h3 class="ref-name">㈜ 더기반</h3>
+        <p class="ref-subtitle" data-i18n="rc2_sub">Video Production · 기업 홍보 영상 제작</p>
+        <p class="ref-desc" data-i18n="rc2_desc">
+          ㈜ 더기반의 브랜드 가치와 핵심 역량을 효과적으로 전달하는 기업 홍보 영상을 기획부터 최종 납품까지 전 과정을 담당하였습니다. 스토리보드 기획, 현장 촬영, 전문 편집, 모션 그래픽·자막·배경음악 삽입을 포함한 풀패키지 영상 제작을 진행하였으며, 유튜브·SNS·프레젠테이션 등 다양한 채널에 최적화된 다중 포맷으로 납품하여 브랜드 온라인 노출 효과를 극대화하였습니다.
+        </p>
+        <ul class="ref-list">
+          <li data-i18n="rc2_l1">기업 홍보 영상 스토리보드 기획</li>
+          <li data-i18n="rc2_l2">전문 장비 활용 현장 촬영 진행</li>
+          <li data-i18n="rc2_l3">모션 그래픽·자막·BGM 삽입 편집</li>
+          <li data-i18n="rc2_l4">유튜브·SNS·PPT 다중 포맷 납품</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 03 기반테크 -->
+    <div class="ref-card reveal">
+      <div class="ref-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+          alt="기반테크 카탈로그 및 홈페이지 제작"
+          loading="lazy"
+        />
+        <div class="ref-img-overlay">
+          <span class="ref-num">03</span>
+          <span class="ref-cat-badge" data-i18n="rc3_cat">카탈로그 + 홈페이지</span>
+        </div>
+      </div>
+      <div class="ref-body">
+        <div class="ref-tags-row">
+          <span class="ref-tag" data-i18n="rc3_t1">제품 카탈로그</span>
+          <span class="ref-tag" data-i18n="rc3_t2">기업 홈페이지</span>
+          <span class="ref-tag" data-i18n="rc3_t3">B2B 특화</span>
+        </div>
+        <h3 class="ref-name">㈜ 기반테크</h3>
+        <p class="ref-subtitle" data-i18n="rc3_sub">Catalog Design + Website · 제조·기술 전문기업</p>
+        <p class="ref-desc" data-i18n="rc3_desc">
+          기술력 중심의 제조·IT 전문기업 ㈜ 기반테크의 제품 카탈로그 제작과 기업 홈페이지 구축을 동시에 진행하였습니다. 카탈로그는 기술 사양과 제품 경쟁력을 시각적으로 임팩트 있게 표현하는 데 주력하였으며, 바이어·파트너사를 대상으로 한 B2B 특화 디자인을 적용하였습니다. 홈페이지는 제품 라인업과 기술 역량을 효과적으로 소개하는 구조로 설계하여 온·오프라인 영업 경쟁력을 동시에 강화하였습니다.
+        </p>
+        <ul class="ref-list">
+          <li data-i18n="rc3_l1">제품 라인업 전체 카탈로그 기획·제작</li>
+          <li data-i18n="rc3_l2">B2B 영업 특화 디자인 및 레이아웃</li>
+          <li data-i18n="rc3_l3">기업 홈페이지 설계 및 구축</li>
+          <li data-i18n="rc3_l4">디지털·인쇄 겸용 고해상도 파일 납품</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 04 우영테크 -->
+    <div class="ref-card ref-card-reverse reveal">
+      <div class="ref-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+          alt="우영테크 다국어 홈페이지 및 카탈로그 제작"
+          loading="lazy"
+        />
+        <div class="ref-img-overlay">
+          <span class="ref-num">04</span>
+          <span class="ref-cat-badge" data-i18n="rc4_cat">카탈로그 + 다국어 홈페이지</span>
+        </div>
+        <div class="ref-ongoing-badge" data-i18n="rc4_ongoing">ERP 도입 진행중</div>
+      </div>
+      <div class="ref-body">
+        <div class="ref-tags-row">
+          <span class="ref-tag" data-i18n="rc4_t1">다국어 홈페이지</span>
+          <span class="ref-tag" data-i18n="rc4_t2">카탈로그 제작</span>
+          <span class="ref-tag ref-tag-active" data-i18n="rc4_t3">ERP 준비중</span>
+        </div>
+        <h3 class="ref-name">우영테크</h3>
+        <p class="ref-subtitle" data-i18n="rc4_sub">Multilingual Website + Catalog · ERP Implementation (Upcoming)</p>
+        <p class="ref-desc" data-i18n="rc4_desc">
+          글로벌 시장을 타깃으로 하는 우영테크의 다국어 홈페이지와 해외 바이어용 영문 제품 카탈로그를 제작하였습니다. 한국어·영어·일본어 3개 국어를 지원하는 반응형 홈페이지를 구축하여 해외 파트너 및 바이어와의 온라인 커뮤니케이션 효율을 크게 향상시켰습니다. 현재는 생산·재고·물류 관리 효율화를 위한 맞춤형 ERP 시스템 도입을 앤트로메타와 함께 준비하고 있으며, 디지털 혁신의 다음 단계로 나아가고 있습니다.
+        </p>
+        <ul class="ref-list">
+          <li data-i18n="rc4_l1">한국어·영어·일본어 다국어 홈페이지 구축</li>
+          <li data-i18n="rc4_l2">해외 바이어 대상 영문 제품 카탈로그 제작</li>
+          <li data-i18n="rc4_l3">글로벌 SEO 최적화 및 해외 검색 노출 강화</li>
+          <li data-i18n="rc4_l4">맞춤형 ERP 시스템 도입 컨설팅 진행중</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 05 벗앤벗 -->
+    <div class="ref-card reveal">
+      <div class="ref-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80"
+          alt="벗앤벗 카탈로그 제작 및 IT 컨설팅 MOU"
+          loading="lazy"
+        />
+        <div class="ref-img-overlay">
+          <span class="ref-num">05</span>
+          <span class="ref-cat-badge" data-i18n="rc5_cat">카탈로그 + IT MOU</span>
+        </div>
+        <div class="ref-ongoing-badge" data-i18n="rc5_ongoing">MOU 파트너</div>
+      </div>
+      <div class="ref-body">
+        <div class="ref-tags-row">
+          <span class="ref-tag" data-i18n="rc5_t1">브랜드 카탈로그</span>
+          <span class="ref-tag" data-i18n="rc5_t2">브로슈어</span>
+          <span class="ref-tag ref-tag-active" data-i18n="rc5_t3">IT 컨설팅 MOU</span>
+        </div>
+        <h3 class="ref-name">㈜ 벗앤벗</h3>
+        <p class="ref-subtitle" data-i18n="rc5_sub">Catalog Design · IT Consulting MOU · 전략적 IT 파트너십</p>
+        <p class="ref-desc" data-i18n="rc5_desc">
+          ㈜ 벗앤벗의 브랜드 정체성을 담은 제품·서비스 카탈로그를 전면 기획·제작하였습니다. 고객사의 핵심 가치와 제품 차별성을 한눈에 전달할 수 있도록 시각적 스토리텔링 구조를 설계하였으며, 브랜드 컬러·폰트·이미지 톤앤매너를 일관성 있게 적용하여 전문성과 신뢰감을 극대화하였습니다. 카탈로그 납품 이후 긴밀한 협력 관계를 기반으로 IT 컨설팅 분야 MOU(양해각서)를 체결, 디지털 전환 전반에 걸친 전략적 IT 파트너십을 구축하였습니다.
+        </p>
+        <ul class="ref-list">
+          <li data-i18n="rc5_l1">브랜드 아이덴티티 반영 카탈로그 전면 기획·제작</li>
+          <li data-i18n="rc5_l2">인쇄용 CMYK + 디지털 RGB 이중 포맷 납품</li>
+          <li data-i18n="rc5_l3">IT 컨설팅 분야 MOU 체결 — 전략적 파트너십</li>
+          <li data-i18n="rc5_l4">디지털 전환 로드맵 공동 수립 및 지속 협력</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 06 의료기관 -->
+    <div class="ref-card ref-card-reverse reveal">
+      <div class="ref-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
+          alt="의료기관 홈페이지 제작"
+          loading="lazy"
+        />
+        <div class="ref-img-overlay">
+          <span class="ref-num">06</span>
+          <span class="ref-cat-badge" data-i18n="rc6_cat">의료기관 홈페이지</span>
+        </div>
+      </div>
+      <div class="ref-body">
+        <div class="ref-tags-row">
+          <span class="ref-tag" data-i18n="rc6_t1">병원·의원</span>
+          <span class="ref-tag" data-i18n="rc6_t2">진료 예약 연동</span>
+          <span class="ref-tag" data-i18n="rc6_t3">모바일 최적화</span>
+        </div>
+        <h3 class="ref-name" data-i18n="rc6_name">의료기관 다수</h3>
+        <p class="ref-subtitle" data-i18n="rc6_sub">Medical Website · 병원·의원·클리닉 홈페이지</p>
+        <p class="ref-desc" data-i18n="rc6_desc">
+          내과, 피부과, 치과, 한의원 등 다양한 진료과목의 의료기관 홈페이지를 다수 제작·납품한 실적을 보유하고 있습니다. 환자 중심의 직관적인 UX 설계로 진료 안내, 의료진 소개, 오시는 길, 온라인 예약 기능 등을 체계적으로 구성하였습니다. 의료법 가이드라인 준수 및 개인정보 보호 설계를 기본으로 탑재하며, 스마트폰 사용 환자를 위한 모바일 퍼스트 디자인을 적용하여 실질적인 예약 전환율을 높이고 있습니다.
+        </p>
+        <ul class="ref-list">
+          <li data-i18n="rc6_l1">환자 중심 UX 기반 의료 홈페이지 구축</li>
+          <li data-i18n="rc6_l2">진료과목·의료진·시설 소개 콘텐츠 구성</li>
+          <li data-i18n="rc6_l3">온라인 예약 시스템 연동</li>
+          <li data-i18n="rc6_l4">의료법 준수·개인정보보호 설계 기본 탑재</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 07 대한신경과협회 -->
+    <div class="ref-card reveal">
+      <div class="ref-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=80"
+          alt="대한신경과협회 홈페이지 준비중"
+          loading="lazy"
+        />
+        <div class="ref-img-overlay">
+          <span class="ref-num">07</span>
+          <span class="ref-cat-badge" data-i18n="rc7_cat">의료단체 홈페이지</span>
+        </div>
+        <div class="ref-ongoing-badge" data-i18n="rc7_ongoing">제작 준비중</div>
+      </div>
+      <div class="ref-body">
+        <div class="ref-tags-row">
+          <span class="ref-tag" data-i18n="rc7_t1">의료 전문 단체</span>
+          <span class="ref-tag" data-i18n="rc7_t2">기관 홈페이지</span>
+          <span class="ref-tag ref-tag-active" data-i18n="rc7_t3">준비중</span>
+        </div>
+        <h3 class="ref-name" data-i18n="rc7_name">대한신경과협회</h3>
+        <p class="ref-subtitle" data-i18n="rc7_sub">Medical Association Website · 전문 의료단체 공식 홈페이지</p>
+        <p class="ref-desc" data-i18n="rc7_desc">
+          대한민국 신경과 전문의를 대표하는 대한신경과협회의 공식 홈페이지 구축을 준비하고 있습니다. 의료 전문가 단체의 권위와 신뢰를 온라인에서 효과적으로 표현하는 것을 최우선 목표로, 학술 정보 제공·회원 관리·공지사항·학회 일정 등 협회 운영에 최적화된 기능 구조를 설계할 예정입니다. 의료 전문가와 일반 시민 모두가 편리하게 이용할 수 있는 직관적인 UI/UX와 접근성 높은 다국어 지원을 적용하여 협회의 위상에 걸맞은 디지털 플랫폼을 구축할 예정입니다.
+        </p>
+        <ul class="ref-list">
+          <li data-i18n="rc7_l1">전국 신경과 전문의 대표 협회 공식 홈페이지 구축</li>
+          <li data-i18n="rc7_l2">회원 관리·학술 정보·학회 일정 통합 플랫폼 설계</li>
+          <li data-i18n="rc7_l3">의료 전문가·일반인 대상 이중 UX 구조 설계</li>
+          <li data-i18n="rc7_l4">접근성(웹 접근성 지침 준수) + 다국어 지원 적용 예정</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INDUSTRY SECTION -->
+<section style="background:var(--bg2)">
+  <div class="inner">
+    <div class="sh reveal">
       <div class="stag" data-i18n="ind_title">서비스 산업군</div>
+      <h2 class="st" data-i18n="ind_h">다양한 산업에 걸친 전문성</h2>
     </div>
     <div class="ind-grid reveal">
       <span class="ind-badge" data-i18n="ind1">제조업</span>
@@ -87,13 +332,10 @@
       <span class="ind-badge" data-i18n="ind5">공공·기관</span>
       <span class="ind-badge" data-i18n="ind6">스타트업</span>
     </div>
-
-    <div class="trust-text reveal" data-i18n="cl_trust">
-      앤트로메타는 노루홀딩스, 더기반, 기반테크, 우영테크, 벗앤벗 등 다양한 기업 및 다수의 의료기관 홈페이지를 제작·납품하며 신뢰를 쌓아왔습니다. 규모와 업종을 불문하고 최고의 서비스를 제공합니다.
-    </div>
   </div>
 </section>
 
+<!-- CTA -->
 <div class="cta-section">
   <div class="inner">
     <div class="cta-card reveal">

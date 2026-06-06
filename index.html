@@ -47,6 +47,7 @@
 <!-- HERO -->
 <section id="home-hero">
   <div class="h-bg">
+    <div class="h-bg-img"></div>
     <div class="orb orb1"></div>
     <div class="orb orb2"></div>
     <div class="orb orb3"></div>
@@ -93,28 +94,36 @@
           </div>
         </div>
       </div>
-      <div class="about-visual reveal d2">
-        <div class="av-card">
-          <div class="av-num">2022</div>
-          <div class="av-lbl" data-i18n="st1l">설립 연도</div>
-        </div>
-        <div class="av-card">
-          <div class="av-num">20+</div>
-          <div class="av-lbl" data-i18n="st2l">완료 프로젝트</div>
-        </div>
-        <div class="av-card">
-          <div class="av-num">5</div>
-          <div class="av-lbl" data-i18n="st3l">전문 서비스</div>
-        </div>
-        <div class="av-card">
-          <div class="av-num">100%</div>
-          <div class="av-lbl" data-i18n="st4l">고객 만족</div>
+      <!-- About image with stat overlay -->
+      <div class="about-img-wrap reveal d2">
+        <img
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+          alt="AnthroMeta 전문 IT 팀"
+          loading="lazy"
+        />
+        <div class="about-img-overlay"></div>
+        <div class="about-img-stat">
+          <div class="ais">
+            <div class="ais-n">2022</div>
+            <div class="ais-l" data-i18n="st1l">설립 연도</div>
+          </div>
+          <div class="ais">
+            <div class="ais-n">20+</div>
+            <div class="ais-l" data-i18n="st2l">완료 프로젝트</div>
+          </div>
+          <div class="ais">
+            <div class="ais-n">5</div>
+            <div class="ais-l" data-i18n="st3l">전문 서비스</div>
+          </div>
+          <div class="ais">
+            <div class="ais-n">100%</div>
+            <div class="ais-l" data-i18n="st4l">고객 만족</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- WHY ANTHROMETA -->
 <section style="background:var(--bg)">
@@ -159,26 +168,31 @@
     </div>
     <div class="svc-prev-grid">
       <a href="services.html" class="spc reveal d1">
+        <img class="spc-img" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=75" alt="ERP 솔루션" loading="lazy">
         <div class="si si1">⚙️</div>
         <h3 data-i18n="s1t">ERP 솔루션</h3>
         <p data-i18n="s1p">기업 맞춤형 ERP 구축 · 운영</p>
       </a>
       <a href="services.html" class="spc reveal d2">
+        <img class="spc-img" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=75" alt="홈페이지 제작" loading="lazy">
         <div class="si si2">🌐</div>
         <h3 data-i18n="s2t">홈페이지 제작</h3>
         <p data-i18n="s2p">기업·병원·기관 웹사이트</p>
       </a>
       <a href="services.html" class="spc reveal d3">
+        <img class="spc-img" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=75" alt="카탈로그 디자인" loading="lazy">
         <div class="si si3">🎨</div>
         <h3 data-i18n="s3t">카탈로그 디자인</h3>
         <p data-i18n="s3p">브랜드 홍보물 기획·제작</p>
       </a>
       <a href="services.html" class="spc reveal d4">
+        <img class="spc-img" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=600&q=75" alt="ISMS 컨설팅" loading="lazy">
         <div class="si si4">🔒</div>
         <h3 data-i18n="s4t">ISMS 컨설팅</h3>
         <p data-i18n="s4p">정보보안 인증 취득 지원</p>
       </a>
       <a href="services.html" class="spc reveal d5">
+        <img class="spc-img" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=600&q=75" alt="AI 솔루션" loading="lazy">
         <div class="si si5">🤖</div>
         <h3 data-i18n="s5t">AI 기반 솔루션</h3>
         <p data-i18n="s5p">업무 자동화 · AI 도입</p>
@@ -204,6 +218,7 @@
       <div class="cb">우영테크</div>
       <div class="cb">㈜ 벗앤벗</div>
       <div class="cb" data-i18n="cl_hosp">의료/병원 다수</div>
+      <div class="cb" data-i18n="cl_neuro">대한신경과협회 <span style="font-size:.7em;color:var(--yellow)">(준비중)</span></div>
     </div>
     <div class="cl-more reveal">
       <a href="clients.html" class="btn-s" data-i18n="cl_link">거래처 더보기 →</a>

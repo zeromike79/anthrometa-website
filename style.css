@@ -260,10 +260,135 @@ footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,1
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
 .d4{transition-delay:.32s}.d5{transition-delay:.40s}
 
+/* ── HERO BACKGROUND IMAGE ── */
+.h-bg-img{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  opacity:.07;
+  z-index:0;
+}
+
+/* ── ABOUT SECTION IMAGE ── */
+.about-img-wrap{
+  position:relative;border-radius:20px;overflow:hidden;
+  aspect-ratio:4/3;
+  box-shadow:0 24px 64px rgba(0,0,0,.5);
+}
+.about-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.about-img-wrap:hover img{transform:scale(1.04)}
+.about-img-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(7,19,26,.6) 0%,rgba(13,143,160,.15) 100%);
+  border:1px solid rgba(29,181,197,.18);border-radius:20px;
+}
+.about-img-stat{
+  position:absolute;bottom:1.4rem;left:1.4rem;right:1.4rem;
+  display:flex;gap:.8rem;flex-wrap:wrap;
+}
+.ais{
+  background:rgba(7,19,26,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(29,181,197,.25);border-radius:12px;
+  padding:.7rem 1rem;flex:1;min-width:80px;text-align:center;
+}
+.ais-n{font-family:'Montserrat',sans-serif;font-size:1.35rem;font-weight:900;
+  background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.ais-l{font-size:.68rem;color:var(--txt2);margin-top:.15rem}
+
+/* ── SERVICE CARD IMAGE ── */
+.sc-img{width:100%;height:160px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;display:block;
+  filter:brightness(.8) saturate(.9);transition:filter .3s}
+.sc:hover .sc-img{filter:brightness(.95) saturate(1.1)}
+
+/* ── SERVICE PREVIEW CARD IMAGE ── */
+.spc-img{width:100%;height:120px;object-fit:cover;border-radius:10px;margin-bottom:.9rem;
+  filter:brightness(.75) saturate(.85);transition:filter .3s}
+.spc:hover .spc-img{filter:brightness(.9) saturate(1.05)}
+
+/* ── REFERENCE CARDS ── */
+#clients-page{background:var(--bg);padding:4rem 2rem 5.5rem}
+
+.ref-card{
+  display:grid;grid-template-columns:1fr 1.15fr;
+  gap:0;border-radius:24px;overflow:hidden;
+  border:1px solid var(--border);
+  background:var(--card);
+  margin-bottom:2.8rem;
+  transition:var(--ease);
+  backdrop-filter:blur(10px);
+}
+.ref-card:hover{border-color:rgba(29,181,197,.3);box-shadow:0 28px 72px rgba(0,0,0,.35),0 0 0 1px rgba(29,181,197,.08)}
+.ref-card-reverse{grid-template-columns:1.15fr 1fr}
+.ref-card-reverse .ref-img-wrap{order:2}
+.ref-card-reverse .ref-body{order:1}
+
+.ref-img-wrap{position:relative;overflow:hidden;min-height:340px}
+.ref-img-wrap img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .7s cubic-bezier(.4,0,.2,1),filter .4s;
+  filter:brightness(.72) saturate(.9);
+}
+.ref-card:hover .ref-img-wrap img{transform:scale(1.06);filter:brightness(.82) saturate(1)}
+
+.ref-img-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(7,19,26,.55) 0%,rgba(13,143,160,.18) 100%);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:1.6rem;gap:.6rem;
+}
+.ref-num{
+  font-family:'Montserrat',sans-serif;font-size:3.2rem;font-weight:900;
+  color:rgba(255,255,255,.12);line-height:1;letter-spacing:-2px;
+  position:absolute;top:1.2rem;left:1.5rem;
+}
+.ref-cat-badge{
+  display:inline-block;align-self:flex-start;
+  background:rgba(29,181,197,.82);backdrop-filter:blur(10px);
+  color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.8px;
+  padding:.35rem .85rem;border-radius:50px;text-transform:uppercase;
+}
+
+.ref-ongoing-badge{
+  position:absolute;top:1.2rem;right:1.2rem;
+  background:rgba(239,192,48,.9);color:#1a0a0a;
+  font-size:.72rem;font-weight:800;padding:.3rem .75rem;
+  border-radius:50px;letter-spacing:.5px;animation:pulse-badge 2.4s ease-in-out infinite;
+}
+@keyframes pulse-badge{0%,100%{box-shadow:0 0 0 0 rgba(239,192,48,.5)}50%{box-shadow:0 0 0 8px rgba(239,192,48,0)}}
+
+.ref-body{
+  padding:2.4rem 2.6rem;display:flex;flex-direction:column;gap:1rem;
+  justify-content:center;
+}
+
+.ref-tags-row{display:flex;flex-wrap:wrap;gap:.45rem}
+.ref-tag{
+  background:rgba(29,181,197,.09);border:1px solid rgba(29,181,197,.2);
+  color:rgba(97,225,238,.85);font-size:.72rem;font-weight:600;letter-spacing:.4px;
+  padding:.22rem .65rem;border-radius:5px;
+}
+.ref-tag-active{background:rgba(239,192,48,.12);border-color:rgba(239,192,48,.35);color:#EFC030}
+
+.ref-name{font-size:clamp(1.5rem,2.5vw,2rem);font-weight:900;line-height:1.15;color:var(--txt)}
+.ref-subtitle{font-size:.82rem;color:var(--teal);font-weight:600;letter-spacing:.2px}
+.ref-desc{font-size:.88rem;color:var(--txt2);line-height:1.85}
+
+.ref-list{list-style:none;display:flex;flex-direction:column;gap:.5rem;
+  padding-top:.9rem;border-top:1px solid rgba(255,255,255,.06);
+}
+.ref-list li{font-size:.83rem;color:var(--txt2);display:flex;align-items:flex-start;gap:.6rem;line-height:1.55}
+.ref-list li::before{content:'✓';color:var(--teal);font-weight:700;flex-shrink:0;margin-top:.05rem}
+
+/* industry heading */
+.ind-h{font-size:clamp(1.4rem,2.5vw,2rem);font-weight:800;margin-bottom:.7rem}
+
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   .about-grid{grid-template-columns:1fr}
   .about-visual{grid-template-columns:repeat(4,1fr)}
+  .ref-card,.ref-card-reverse{grid-template-columns:1fr}
+  .ref-card-reverse .ref-img-wrap{order:0}
+  .ref-card-reverse .ref-body{order:0}
+  .ref-img-wrap{min-height:260px}
 }
 @media(max-width:768px){
   header{padding:0 1.2rem}
@@ -275,8 +400,12 @@ footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,1
   .ccard{padding:2rem 1.4rem}
   .fi2{flex-direction:column;text-align:center}
   .about-visual{grid-template-columns:repeat(2,1fr)}
+  .ref-body{padding:1.8rem 1.6rem}
+  .ref-img-wrap{min-height:220px}
 }
 @media(max-width:460px){
   .lb .ll{display:none}
   .cinfo{flex-direction:column;align-items:flex-start;padding-left:1rem}
+  .ref-body{padding:1.4rem 1.2rem}
+  .about-img-stat{flex-direction:column;gap:.5rem}
 }
