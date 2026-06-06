@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body class="lang-ko">
 
@@ -572,20 +572,26 @@ const BLOGS = {
 
 /* ── MODAL FUNCTIONS ── */
 function openBlogModal(id) {
-  const b = BLOGS[id];
+  var b = BLOGS[id];
   if (!b) return;
   document.getElementById('m-cat').textContent = b.cat;
   document.getElementById('m-title').textContent = b.title;
   document.getElementById('m-meta').innerHTML =
-    '<span>' + b.date + '</span><span>' + b.author + '</span><span>&#128338; ' + b.read + '</span>';
+    '<span>' + b.date + '</span><span>' + b.author + '</span><span>&#9201; ' + b.read + '</span>';
   document.getElementById('m-body').innerHTML = b.body;
-  document.getElementById('blog-modal').classList.add('open');
+  var overlay = document.getElementById('blog-modal');
+  overlay.style.display = 'flex';
+  overlay.querySelector('.modal-box').scrollTop = 0;
+  requestAnimationFrame(function() {
+    overlay.classList.add('open');
+  });
   document.body.style.overflow = 'hidden';
-  document.querySelector('.modal-box').scrollTop = 0;
 }
 function closeBlogModal() {
-  document.getElementById('blog-modal').classList.remove('open');
+  var overlay = document.getElementById('blog-modal');
+  overlay.classList.remove('open');
   document.body.style.overflow = '';
+  setTimeout(function() { overlay.style.display = 'none'; }, 300);
 }
 document.getElementById('blog-modal').addEventListener('click', function(e) {
   if (e.target === this) closeBlogModal();

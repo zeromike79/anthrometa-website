@@ -436,7 +436,7 @@ footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,1
 .blog-read{color:var(--teal);font-weight:600;font-size:.78rem}
 
 /* ── BLOG MODAL ── */
-.modal-overlay{position:fixed;inset:0;background:rgba(4,12,18,0.82);z-index:3000;display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:opacity .28s ease;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.modal-overlay{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(4,12,18,0.88);z-index:3000;display:none;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:opacity .28s ease}
 .modal-overlay.open{opacity:1;pointer-events:auto}
 .modal-box{background:#0b1d27;border:1px solid rgba(29,181,197,0.22);border-radius:24px;max-width:820px;width:100%;max-height:88vh;overflow-y:auto;position:relative;transform:translateY(22px);transition:transform .3s cubic-bezier(.4,0,.2,1);padding:2.8rem 2.8rem 2.4rem;scrollbar-width:thin;scrollbar-color:var(--teal) transparent}
 .modal-overlay.open .modal-box{transform:translateY(0)}
