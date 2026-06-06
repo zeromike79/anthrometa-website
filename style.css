@@ -265,7 +265,7 @@ footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,1
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .reveal.vis{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
-.d4{transition-delay:.32s}.d5{transition-delay:.40s}
+.d4{transition-delay:.32s}.d5{transition-delay:.40s}.d6{transition-delay:.48s}
 
 /* ── HERO BACKGROUND IMAGE ── */
 .h-bg-img{
@@ -524,10 +524,13 @@ footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,1
   .nav-quote{display:none}
   .burger{display:flex}
   section{padding:4rem 1.2rem}
+  .proc-wrap{padding:3.5rem 1.2rem}
+  .cta-section{padding:3.5rem 1.2rem}
   .page-banner{padding:8rem 1.5rem 4rem}
   .sgrid,.svc-prev-grid{grid-template-columns:1fr}
   .ccard{padding:2rem 1.4rem}
   .fi2{flex-direction:column;text-align:center}
+  .fmid{word-break:break-word;line-height:2}
   .about-visual{grid-template-columns:repeat(2,1fr)}
   .ref-body{padding:1.8rem 1.6rem}
   .ref-img-wrap{height:220px}
@@ -540,4 +543,10 @@ footer{background:#040c12;padding:2.2rem 2rem;border-top:1px solid rgba(29,181,1
   .cinfo{flex-direction:column;align-items:flex-start;padding-left:1rem}
   .ref-body{padding:1.4rem 1.2rem}
   .about-img-stat{flex-direction:column;gap:.5rem}
+  .form-checks{grid-template-columns:1fr}
+  .values-grid{grid-template-columns:1fr}
+  .ct-extras{grid-template-columns:1fr}
+  .qform{padding:1.6rem 1.2rem}
+  .fq{padding:1rem 1.2rem;font-size:.88rem}
+  .ref-name{font-size:1.35rem}
 }
