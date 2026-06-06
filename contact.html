@@ -53,41 +53,139 @@
 
 <section id="contact-page">
   <div class="inner">
-    <div class="ccard reveal">
-      <p data-i18n="ct_sub">지금 바로 상담을 시작하세요</p>
-      <a href="http://pf.kakao.com/_PPgGX" class="kbtn" target="_blank" rel="noopener">
-        <svg class="kico" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 3C6.48 3 2 6.71 2 11.3c0 2.94 1.87 5.53 4.7 7.06l-1.2 4.36c-.1.37.32.66.65.46l5.3-3.42c.18.01.36.02.55.02 5.52 0 10-3.71 10-8.3C22 6.71 17.52 3 12 3z" fill="#3B1F1F"/>
-        </svg>
-        <span data-i18n="ct_kbtn">카카오톡으로 문의하기</span>
-      </a>
-      <div class="cinfo">
-        <div class="cii">
-          <div class="ico">📧</div>
-          <div>
-            <div class="cii-lbl" data-i18n="ct_el">이메일</div>
-            <a href="mailto:info@anthrometa.com" style="color:var(--teal);text-decoration:none">info@anthrometa.com</a>
+    <div class="quote-wrap">
+
+      <!-- LEFT: 연락처 정보 -->
+      <div class="quote-info reveal">
+
+        <div class="quote-info-card" style="text-align:center">
+          <p style="font-size:.92rem;color:var(--txt2);margin-bottom:1.1rem" data-i18n="ct_sub">지금 바로 상담을 시작하세요</p>
+          <a href="http://pf.kakao.com/_PPgGX" class="kbtn" target="_blank" rel="noopener" style="display:inline-flex">
+            <svg class="kico" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3C6.48 3 2 6.71 2 11.3c0 2.94 1.87 5.53 4.7 7.06l-1.2 4.36c-.1.37.32.66.65.46l5.3-3.42c.18.01.36.02.55.02 5.52 0 10-3.71 10-8.3C22 6.71 17.52 3 12 3z" fill="#3B1F1F"/>
+            </svg>
+            <span data-i18n="ct_kbtn">카카오톡으로 문의하기</span>
+          </a>
+        </div>
+
+        <div class="quote-info-card">
+          <div style="display:flex;flex-direction:column;gap:1rem">
+            <div style="display:flex;align-items:flex-start;gap:.8rem">
+              <span style="font-size:1.2rem">📧</span>
+              <div>
+                <div style="font-size:.7rem;color:var(--txt3);letter-spacing:1px;text-transform:uppercase;margin-bottom:.3rem" data-i18n="ct_el">이메일</div>
+                <a href="mailto:info@anthrometa.com" style="color:var(--teal);text-decoration:none;font-size:.9rem;font-weight:600">info@anthrometa.com</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:.8rem">
+              <span style="font-size:1.2rem">📍</span>
+              <div>
+                <div style="font-size:.7rem;color:var(--txt3);letter-spacing:1px;text-transform:uppercase;margin-bottom:.3rem" data-i18n="ct_ll">위치</div>
+                <div style="font-size:.9rem;color:var(--txt2)" data-i18n="ct_loc">경기도 파주시</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="cii">
-          <div class="ico">📍</div>
-          <div>
-            <div class="cii-lbl" data-i18n="ct_ll">위치</div>
-            <div data-i18n="ct_loc">경기도 파주시</div>
+
+        <div class="quote-info-card">
+          <div class="ct-extras" style="margin-top:0">
+            <div class="ct-extra-card">
+              <div class="ct-extra-title" data-i18n="ct_hrs_title">운영 시간</div>
+              <div class="ct-extra-val" data-i18n="ct_hrs">평일 09:00 – 18:00
+(토·일·공휴일 휴무)</div>
+            </div>
+            <div class="ct-extra-card">
+              <div class="ct-extra-title" data-i18n="ct_resp_title">응답 시간</div>
+              <div class="ct-extra-val" data-i18n="ct_resp">문의 접수 후
+24시간 이내 답변</div>
+            </div>
           </div>
         </div>
+
       </div>
 
-      <div class="ct-extras">
-        <div class="ct-extra-card">
-          <div class="ct-extra-title" data-i18n="ct_hrs_title">운영 시간</div>
-          <div class="ct-extra-val" data-i18n="ct_hrs">평일 09:00 – 18:00
-(토·일·공휴일 휴무)</div>
-        </div>
-        <div class="ct-extra-card">
-          <div class="ct-extra-title" data-i18n="ct_resp_title">응답 시간</div>
-          <div class="ct-extra-val" data-i18n="ct_resp">문의 접수 후
-24시간 이내 답변</div>
+      <!-- RIGHT: 문의 양식 -->
+      <div class="reveal">
+        <div class="qform" id="contact-form-wrap">
+          <form id="contact-form" onsubmit="submitContact(event)">
+
+            <div class="form-section-title" data-i18n="qt_f_svc">서비스 선택 (복수 선택 가능)</div>
+            <div class="form-checks">
+              <label class="form-check-label"><input type="checkbox" name="svc" value="ERP 솔루션"> ERP 솔루션</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="홈페이지 제작"> 홈페이지 제작</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="카탈로그 디자인"> 카탈로그 디자인</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="ISMS 컨설팅"> ISMS 컨설팅</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="AI 기반 솔루션"> AI 기반 솔루션</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="로컬 LLM AI"> 로컬 LLM AI</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="기타 소프트웨어"> 기타 소프트웨어</label>
+            </div>
+
+            <div class="form-section-title" data-i18n="qt_f_basic">기본 정보</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_company">회사명 <span class="req">*</span></label>
+                <input type="text" name="company" placeholder="회사명을 입력하세요" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_name">담당자명 <span class="req">*</span></label>
+                <input type="text" name="name" placeholder="담당자 성함" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_email">이메일 <span class="req">*</span></label>
+                <input type="email" name="email" placeholder="example@company.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_phone">연락처 (선택)</label>
+                <input type="tel" name="phone" placeholder="010-0000-0000">
+              </div>
+            </div>
+
+            <div class="form-section-title" data-i18n="qt_f_project">프로젝트 정보</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_budget">예산 범위</label>
+                <select name="budget">
+                  <option value="" data-i18n="qt_bud0">선택하세요</option>
+                  <option value="500만원 이하" data-i18n="qt_bud1">500만원 이하</option>
+                  <option value="500~1,000만원" data-i18n="qt_bud2">500 ~ 1,000만원</option>
+                  <option value="1,000~3,000만원" data-i18n="qt_bud3">1,000 ~ 3,000만원</option>
+                  <option value="3,000만원 이상" data-i18n="qt_bud4">3,000만원 이상</option>
+                  <option value="미정" data-i18n="qt_bud5">미정 / 협의</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_schedule">희망 완료 시기</label>
+                <select name="schedule">
+                  <option value="" data-i18n="qt_sch0">선택하세요</option>
+                  <option value="1개월 이내" data-i18n="qt_sch1">1개월 이내</option>
+                  <option value="1~3개월" data-i18n="qt_sch2">1 ~ 3개월</option>
+                  <option value="3~6개월" data-i18n="qt_sch3">3 ~ 6개월</option>
+                  <option value="6개월 이상" data-i18n="qt_sch4">6개월 이상</option>
+                  <option value="미정" data-i18n="qt_sch5">미정 / 협의</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="qt_f_desc">프로젝트 내용 <span class="req">*</span></label>
+              <textarea name="desc" placeholder="프로젝트에 대해 간략히 설명해 주세요. 현재 상황, 원하는 결과, 참고 사례 등을 자유롭게 작성해 주세요." required></textarea>
+            </div>
+
+            <label class="form-agree-label">
+              <input type="checkbox" required>
+              <span data-i18n="qt_agree">개인정보 수집 및 이용에 동의합니다. 수집된 정보는 견적 제공 목적으로만 사용되며, 제3자에게 제공되지 않습니다.</span>
+            </label>
+
+            <button type="submit" class="form-submit" data-i18n="qt_submit">견적 요청 보내기</button>
+          </form>
+
+          <div class="form-success" id="contact-success" style="display:none">
+            <div class="fs-ico">✅</div>
+            <h3 data-i18n="qt_ok_t">견적 요청이 접수됐습니다!</h3>
+            <p data-i18n="qt_ok_p">24시간 이내에 담당자가 연락드리겠습니다.<br>급한 문의는 카카오톡 채널을 이용해 주세요.</p>
+            <a href="index.html" class="btn-p" style="display:inline-block;margin-top:1.5rem" data-i18n="qt_ok_btn">홈으로 돌아가기</a>
+          </div>
         </div>
       </div>
 
@@ -110,5 +208,16 @@
 </footer>
 
 <script src="main.js"></script>
+<script>
+function submitContact(e) {
+  e.preventDefault();
+  var f = e.target;
+  var svcs = [...f.querySelectorAll('input[name=svc]:checked')].map(function(c){return c.value}).join(', ') || '미선택';
+  var body = '[앤트로메타 문의]\n\n서비스: ' + svcs + '\n회사명: ' + f.company.value + '\n담당자: ' + f.name.value + '\n이메일: ' + f.email.value + '\n연락처: ' + (f.phone.value||'미기재') + '\n예산: ' + (f.budget.value||'미선택') + '\n일정: ' + (f.schedule.value||'미선택') + '\n\n내용:\n' + f.desc.value;
+  window.location.href = 'mailto:info@anthrometa.com?subject=[문의] ' + encodeURIComponent(f.company.value) + '&body=' + encodeURIComponent(body);
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('contact-success').style.display = 'block';
+}
+</script>
 </body>
 </html>
