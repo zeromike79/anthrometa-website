@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>블로그 · 인사이트 | AnthroMeta 앤트로메타</title>
+<meta name="description" content="앤트로메타의 IT 인사이트. AI·LLM, ERP, 웹개발, 정보보안 분야의 최신 트렌드와 실무 노하우를 공유합니다.">
+<link rel="canonical" href="https://www.anthrometa.com/blog.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-ko">
+
+<header id="hdr">
+  <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="amg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#24CEDD"/><stop offset="100%" stop-color="#0A8FA0"/></linearGradient></defs><rect x="1" y="1" width="36" height="36" rx="9" fill="url(#amg)"/><path d="M11 27L19 11L27 27" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="14.5" y1="22" x2="23.5" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg><span class="l-anthro">Anthro</span><span class="l-meta" data-notrans>Meta</span></a>
+  <nav class="nav-links">
+    <a href="index.html"    data-page="index.html"    data-i18n="nav_home">홈</a>
+    <a href="about.html"   data-page="about.html"    data-i18n="nav_about">회사소개</a>
+    <a href="services.html" data-page="services.html" data-i18n="nav_services">서비스</a>
+    <a href="clients.html"  data-page="clients.html"  data-i18n="nav_clients">거래처</a>
+    <a href="blog.html"    data-page="blog.html"     data-i18n="nav_blog">블로그</a>
+    <a href="qa.html"       data-page="qa.html"       data-i18n="nav_qa">Q&amp;A</a>
+    <a href="contact.html"  data-page="contact.html"  data-i18n="nav_contact">문의하기</a>
+  </nav>
+  <div class="nav-right">
+    <a href="quote.html" class="nav-quote" data-i18n="nav_quote">견적문의</a>
+    <button class="lb active" onclick="setLang('ko')" id="bko">🇰🇷 <span class="ll">KO</span></button>
+    <button class="lb"        onclick="setLang('en')" id="ben">🇺🇸 <span class="ll">EN</span></button>
+    <button class="lb"        onclick="setLang('ja')" id="bja">🇯🇵 <span class="ll">JP</span></button>
+    <button class="burger" id="burg" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="mnav" id="mnav">
+  <a href="index.html"    onclick="closeMenu()" data-page="index.html"    data-i18n="nav_home">홈</a>
+  <a href="about.html"   onclick="closeMenu()" data-page="about.html"   data-i18n="nav_about">회사소개</a>
+  <a href="services.html" onclick="closeMenu()" data-page="services.html" data-i18n="nav_services">서비스</a>
+  <a href="clients.html"  onclick="closeMenu()" data-page="clients.html"  data-i18n="nav_clients">거래처</a>
+  <a href="blog.html"    onclick="closeMenu()" data-page="blog.html"    data-i18n="nav_blog">블로그</a>
+  <a href="qa.html"       onclick="closeMenu()" data-page="qa.html"       data-i18n="nav_qa">Q&amp;A</a>
+  <a href="contact.html"  onclick="closeMenu()" data-page="contact.html"  data-i18n="nav_contact">문의하기</a>
+  <a href="quote.html"   onclick="closeMenu()" data-page="quote.html"   data-i18n="nav_quote">견적문의</a>
+</nav>
+
+<div class="page-banner">
+  <div class="stag" data-i18n="blog_tag">INSIGHT &amp; BLOG</div>
+  <h1 data-i18n="blog_title">IT 인사이트</h1>
+  <p data-i18n="blog_sub">AI · ERP · 웹개발 · 보안 분야의 최신 트렌드와 실무 노하우</p>
+</div>
+
+<section style="background:var(--bg)">
+  <div class="inner">
+
+    <!-- CATEGORY FILTER -->
+    <div class="cat-filters reveal">
+      <button class="cat-btn active" onclick="filterBlog('all', this)" data-i18n="cat_all">전체</button>
+      <button class="cat-btn" onclick="filterBlog('ai', this)" data-i18n="cat_ai">AI · LLM</button>
+      <button class="cat-btn" onclick="filterBlog('web', this)" data-i18n="cat_web">웹개발</button>
+      <button class="cat-btn" onclick="filterBlog('erp', this)" data-i18n="cat_erp">ERP</button>
+      <button class="cat-btn" onclick="filterBlog('sec', this)" data-i18n="cat_sec">보안</button>
+    </div>
+
+    <!-- BLOG GRID -->
+    <div class="blog-grid" id="blog-grid">
+
+      <a class="blog-card reveal" href="#" data-cat="ai">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=75" alt="로컬 LLM" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">AI · LLM</span>
+          <div class="blog-title">온프레미스 LLM, 기업이 선택해야 하는 이유</div>
+          <div class="blog-excerpt">클라우드 AI의 보안 우려를 벗어나 사내 서버에 직접 대형언어모델을 구축하는 방법과 비용·효과를 살펴봅니다. 의료·금융·제조업을 중심으로 온프레미스 AI 도입 사례를 분석합니다.</div>
+          <div class="blog-footer">
+            <span>2026. 05. 20</span>
+            <span class="blog-read">읽기 →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="blog-card reveal" href="#" data-cat="sec">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=600&q=75" alt="ISMS 보안" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">보안</span>
+          <div class="blog-title">ISMS-P 인증 취득, 어떻게 준비할까?</div>
+          <div class="blog-excerpt">정보보호 및 개인정보보호 관리체계 인증(ISMS-P) 취득을 위한 단계별 준비 전략. 갭 분석부터 심사 대응까지 실전 노하우를 공유합니다.</div>
+          <div class="blog-footer">
+            <span>2026. 04. 10</span>
+            <span class="blog-read">읽기 →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="blog-card reveal" href="#" data-cat="erp">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=75" alt="ERP 시스템" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">ERP</span>
+          <div class="blog-title">중소기업 ERP 도입 완전 가이드 2026</div>
+          <div class="blog-excerpt">규모별·업종별 ERP 선택 기준부터 도입 비용, 기간, 주의사항까지. 중소기업이 ERP 도입 시 반드시 알아야 할 핵심 포인트를 정리했습니다.</div>
+          <div class="blog-footer">
+            <span>2026. 03. 05</span>
+            <span class="blog-read">읽기 →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="blog-card reveal" href="#" data-cat="web">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=75" alt="웹개발" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">웹개발</span>
+          <div class="blog-title">반응형 웹사이트가 비즈니스 매출에 미치는 영향</div>
+          <div class="blog-excerpt">모바일 트래픽이 60%를 넘어선 시대, 반응형 웹사이트 구축이 실제 전환율과 SEO에 미치는 영향을 데이터로 분석합니다. 다국어 사이트 구축 사례 포함.</div>
+          <div class="blog-footer">
+            <span>2026. 02. 18</span>
+            <span class="blog-read">읽기 →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="blog-card reveal" href="#" data-cat="ai">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=600&q=75" alt="AI 자동화" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">AI · LLM</span>
+          <div class="blog-title">AI 업무 자동화, 실제 도입 사례로 보는 효과</div>
+          <div class="blog-excerpt">문서 처리, 고객 응대, 재고 관리 등 반복 업무에 AI를 도입한 실제 기업 사례를 분석합니다. 투자 대비 효율 개선 수치와 도입 시 유의사항을 함께 소개합니다.</div>
+          <div class="blog-footer">
+            <span>2026. 01. 22</span>
+            <span class="blog-read">읽기 →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="blog-card reveal" href="#" data-cat="web">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=600&q=75" alt="스마트팜" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">웹개발</span>
+          <div class="blog-title">스마트팜과 IT 기술의 결합, 농업의 디지털 혁신</div>
+          <div class="blog-excerpt">자동제어 시스템과 IoT, 웹 모니터링 솔루션을 결합한 스마트팜 IT 구축 사례. 기반테크 프로젝트를 통해 배운 농업 분야 디지털 전환의 핵심을 공유합니다.</div>
+          <div class="blog-footer">
+            <span>2025. 12. 08</span>
+            <span class="blog-read">읽기 →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="inner">
+    <div class="cta-card reveal">
+      <h2 data-i18n="cta_title">프로젝트를 시작할 준비가 되셨나요?</h2>
+      <p data-i18n="cta_desc">부담 없이 문의해 주세요. 빠르고 친절하게 답변드립니다.</p>
+      <a href="contact.html" class="btn-p" data-i18n="cta_btn">지금 문의하기</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fi2">
+    <div class="flogo"><svg class="logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="amg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#24CEDD"/><stop offset="100%" stop-color="#0A8FA0"/></linearGradient></defs><rect x="1" y="1" width="36" height="36" rx="9" fill="url(#amg)"/><path d="M11 27L19 11L27 27" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="14.5" y1="22" x2="23.5" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg><span class="l-anthro">Anthro</span><span class="l-meta" data-notrans>Meta</span></div>
+    <div class="fmid">
+      <span>AnthroMeta</span> &nbsp;|&nbsp;
+      <span data-i18n="ft_loc">경기도 파주시</span> &nbsp;|&nbsp;
+      <span data-i18n="ft_est">설립 2022년 4월</span> &nbsp;|&nbsp;
+      <a href="mailto:info@anthrometa.com" style="color:var(--teal);text-decoration:none">info@anthrometa.com</a> &nbsp;|&nbsp;
+      www.anthrometa.com
+    </div>
+    <div class="fcopy">© 2024 AnthroMeta. <span data-i18n="ft_r">All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+function filterBlog(cat, btn) {
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.blog-card').forEach(card => {
+    card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'flex' : 'none';
+  });
+}
+</script>
+</body>
+</html>

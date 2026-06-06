@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>견적 문의 | AnthroMeta 앤트로메타</title>
+<meta name="description" content="앤트로메타에 프로젝트 견적을 문의하세요. ERP, 홈페이지, ISMS, AI 솔루션 등 맞춤형 견적을 빠르게 제공합니다.">
+<link rel="canonical" href="https://www.anthrometa.com/quote.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-ko">
+
+<header id="hdr">
+  <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="amg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#24CEDD"/><stop offset="100%" stop-color="#0A8FA0"/></linearGradient></defs><rect x="1" y="1" width="36" height="36" rx="9" fill="url(#amg)"/><path d="M11 27L19 11L27 27" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="14.5" y1="22" x2="23.5" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg><span class="l-anthro">Anthro</span><span class="l-meta" data-notrans>Meta</span></a>
+  <nav class="nav-links">
+    <a href="index.html"    data-page="index.html"    data-i18n="nav_home">홈</a>
+    <a href="about.html"   data-page="about.html"    data-i18n="nav_about">회사소개</a>
+    <a href="services.html" data-page="services.html" data-i18n="nav_services">서비스</a>
+    <a href="clients.html"  data-page="clients.html"  data-i18n="nav_clients">거래처</a>
+    <a href="blog.html"    data-page="blog.html"     data-i18n="nav_blog">블로그</a>
+    <a href="qa.html"       data-page="qa.html"       data-i18n="nav_qa">Q&amp;A</a>
+    <a href="contact.html"  data-page="contact.html"  data-i18n="nav_contact">문의하기</a>
+  </nav>
+  <div class="nav-right">
+    <a href="quote.html" class="nav-quote" data-i18n="nav_quote">견적문의</a>
+    <button class="lb active" onclick="setLang('ko')" id="bko">🇰🇷 <span class="ll">KO</span></button>
+    <button class="lb"        onclick="setLang('en')" id="ben">🇺🇸 <span class="ll">EN</span></button>
+    <button class="lb"        onclick="setLang('ja')" id="bja">🇯🇵 <span class="ll">JP</span></button>
+    <button class="burger" id="burg" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="mnav" id="mnav">
+  <a href="index.html"    onclick="closeMenu()" data-page="index.html"    data-i18n="nav_home">홈</a>
+  <a href="about.html"   onclick="closeMenu()" data-page="about.html"   data-i18n="nav_about">회사소개</a>
+  <a href="services.html" onclick="closeMenu()" data-page="services.html" data-i18n="nav_services">서비스</a>
+  <a href="clients.html"  onclick="closeMenu()" data-page="clients.html"  data-i18n="nav_clients">거래처</a>
+  <a href="blog.html"    onclick="closeMenu()" data-page="blog.html"    data-i18n="nav_blog">블로그</a>
+  <a href="qa.html"       onclick="closeMenu()" data-page="qa.html"       data-i18n="nav_qa">Q&amp;A</a>
+  <a href="contact.html"  onclick="closeMenu()" data-page="contact.html"  data-i18n="nav_contact">문의하기</a>
+  <a href="quote.html"   onclick="closeMenu()" data-page="quote.html"   data-i18n="nav_quote">견적문의</a>
+</nav>
+
+<div class="page-banner">
+  <div class="stag" data-i18n="qt_tag">QUOTE REQUEST</div>
+  <h1 data-i18n="qt_title">견적 문의</h1>
+  <p data-i18n="qt_sub">프로젝트 정보를 입력해 주시면 24시간 이내 맞춤 견적을 제공합니다</p>
+</div>
+
+<section style="background:var(--bg)">
+  <div class="inner">
+    <div class="quote-wrap">
+
+      <!-- LEFT: INFO -->
+      <div class="quote-info reveal">
+        <div class="quote-info-card">
+          <h3 data-i18n="qt_proc_t">🗓️ 견적 프로세스</h3>
+          <div class="quote-steps">
+            <div class="quote-step">
+              <div class="quote-step-num">1</div>
+              <span data-i18n="qt_s1">양식 작성 &amp; 제출</span>
+            </div>
+            <div class="quote-step">
+              <div class="quote-step-num">2</div>
+              <span data-i18n="qt_s2">24시간 이내 담당자 연락</span>
+            </div>
+            <div class="quote-step">
+              <div class="quote-step-num">3</div>
+              <span data-i18n="qt_s3">요구사항 상세 미팅 (온/오프)</span>
+            </div>
+            <div class="quote-step">
+              <div class="quote-step-num">4</div>
+              <span data-i18n="qt_s4">맞춤 견적서 발송</span>
+            </div>
+            <div class="quote-step">
+              <div class="quote-step-num">5</div>
+              <span data-i18n="qt_s5">계약 &amp; 프로젝트 착수</span>
+            </div>
+          </div>
+        </div>
+        <div class="quote-info-card">
+          <h3 data-i18n="qt_tip_t">💡 이런 분께 추천</h3>
+          <p data-i18n="qt_tip_p">홈페이지·ERP·AI 도입이 필요하지만 어디서 시작해야 할지 모르는 분, 예산을 먼저 파악하고 싶은 분, 여러 업체 견적을 비교하고 싶은 분 모두 환영합니다. 부담 없이 문의해 주세요.</p>
+        </div>
+        <div class="quote-info-card">
+          <h3 data-i18n="qt_contact_t">📧 빠른 문의</h3>
+          <p data-i18n="qt_contact_p">양식 대신 이메일로 바로 문의하셔도 됩니다.</p>
+          <a href="mailto:info@anthrometa.com" style="display:inline-block;margin-top:.7rem;color:var(--teal);font-weight:700;font-size:.9rem;text-decoration:none">info@anthrometa.com →</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="reveal">
+        <div class="qform" id="qform-wrap">
+          <form id="quote-form" onsubmit="submitQuote(event)">
+
+            <div class="form-section-title" data-i18n="qt_f_svc">서비스 선택 (복수 선택 가능)</div>
+            <div class="form-checks">
+              <label class="form-check-label"><input type="checkbox" name="svc" value="ERP 솔루션"> ERP 솔루션</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="홈페이지 제작"> 홈페이지 제작</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="카탈로그 디자인"> 카탈로그 디자인</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="ISMS 컨설팅"> ISMS 컨설팅</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="AI 기반 솔루션"> AI 기반 솔루션</label>
+              <label class="form-check-label"><input type="checkbox" name="svc" value="로컬 LLM AI"> 로컬 LLM AI</label>
+            </div>
+
+            <div class="form-section-title" data-i18n="qt_f_basic">기본 정보</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_company">회사명 <span class="req">*</span></label>
+                <input type="text" name="company" placeholder="회사명을 입력하세요" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_name">담당자명 <span class="req">*</span></label>
+                <input type="text" name="name" placeholder="담당자 성함" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_email">이메일 <span class="req">*</span></label>
+                <input type="email" name="email" placeholder="example@company.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_phone">연락처 (선택)</label>
+                <input type="tel" name="phone" placeholder="010-0000-0000">
+              </div>
+            </div>
+
+            <div class="form-section-title" data-i18n="qt_f_project">프로젝트 정보</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_budget">예산 범위</label>
+                <select name="budget">
+                  <option value="" data-i18n="qt_bud0">선택하세요</option>
+                  <option value="500만원 이하" data-i18n="qt_bud1">500만원 이하</option>
+                  <option value="500~1,000만원" data-i18n="qt_bud2">500 ~ 1,000만원</option>
+                  <option value="1,000~3,000만원" data-i18n="qt_bud3">1,000 ~ 3,000만원</option>
+                  <option value="3,000만원 이상" data-i18n="qt_bud4">3,000만원 이상</option>
+                  <option value="미정" data-i18n="qt_bud5">미정 / 협의</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="qt_f_schedule">희망 완료 시기</label>
+                <select name="schedule">
+                  <option value="" data-i18n="qt_sch0">선택하세요</option>
+                  <option value="1개월 이내" data-i18n="qt_sch1">1개월 이내</option>
+                  <option value="1~3개월" data-i18n="qt_sch2">1 ~ 3개월</option>
+                  <option value="3~6개월" data-i18n="qt_sch3">3 ~ 6개월</option>
+                  <option value="6개월 이상" data-i18n="qt_sch4">6개월 이상</option>
+                  <option value="미정" data-i18n="qt_sch5">미정 / 협의</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="qt_f_desc">프로젝트 내용 <span class="req">*</span></label>
+              <textarea name="desc" placeholder="프로젝트에 대해 간략히 설명해 주세요. 현재 상황, 원하는 결과, 참고 사례 등을 자유롭게 작성해 주세요." required></textarea>
+            </div>
+
+            <label class="form-agree-label">
+              <input type="checkbox" required>
+              <span data-i18n="qt_agree">개인정보 수집 및 이용에 동의합니다. 수집된 정보는 견적 제공 목적으로만 사용되며, 제3자에게 제공되지 않습니다.</span>
+            </label>
+
+            <button type="submit" class="form-submit" data-i18n="qt_submit">견적 요청 보내기</button>
+          </form>
+
+          <!-- SUCCESS STATE -->
+          <div class="form-success" id="form-success" style="display:none">
+            <div class="fs-ico">✅</div>
+            <h3 data-i18n="qt_ok_t">견적 요청이 접수됐습니다!</h3>
+            <p data-i18n="qt_ok_p">24시간 이내에 담당자가 연락드리겠습니다.<br>급한 문의는 카카오톡 채널을 이용해 주세요.</p>
+            <a href="index.html" class="btn-p" style="display:inline-block;margin-top:1.5rem" data-i18n="qt_ok_btn">홈으로 돌아가기</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fi2">
+    <div class="flogo"><svg class="logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="amg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#24CEDD"/><stop offset="100%" stop-color="#0A8FA0"/></linearGradient></defs><rect x="1" y="1" width="36" height="36" rx="9" fill="url(#amg)"/><path d="M11 27L19 11L27 27" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="14.5" y1="22" x2="23.5" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg><span class="l-anthro">Anthro</span><span class="l-meta" data-notrans>Meta</span></div>
+    <div class="fmid">
+      <span>AnthroMeta</span> &nbsp;|&nbsp;
+      <span data-i18n="ft_loc">경기도 파주시</span> &nbsp;|&nbsp;
+      <span data-i18n="ft_est">설립 2022년 4월</span> &nbsp;|&nbsp;
+      <a href="mailto:info@anthrometa.com" style="color:var(--teal);text-decoration:none">info@anthrometa.com</a> &nbsp;|&nbsp;
+      www.anthrometa.com
+    </div>
+    <div class="fcopy">© 2024 AnthroMeta. <span data-i18n="ft_r">All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+function submitQuote(e) {
+  e.preventDefault();
+  const f = e.target;
+  const svcs = [...f.querySelectorAll('input[name=svc]:checked')].map(c=>c.value).join(', ') || '미선택';
+  const body = `[앤트로메타 견적 문의]\n\n서비스: ${svcs}\n회사명: ${f.company.value}\n담당자: ${f.name.value}\n이메일: ${f.email.value}\n연락처: ${f.phone.value||'미기재'}\n예산: ${f.budget.value||'미선택'}\n일정: ${f.schedule.value||'미선택'}\n\n내용:\n${f.desc.value}`;
+  window.location.href = `mailto:info@anthrometa.com?subject=[견적문의] ${f.company.value}&body=${encodeURIComponent(body)}`;
+  document.getElementById('quote-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+</script>
+</body>
+</html>
