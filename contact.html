@@ -121,17 +121,6 @@
         <div class="qform" id="contact-form-wrap">
           <form id="contact-form" onsubmit="submitContact(event)">
 
-            <div class="form-section-title" data-i18n="qt_f_svc">서비스 선택 (복수 선택 가능)</div>
-            <div class="form-checks">
-              <label class="form-check-label"><input type="checkbox" name="svc" value="ERP 솔루션"> ERP 솔루션</label>
-              <label class="form-check-label"><input type="checkbox" name="svc" value="홈페이지 제작"> 홈페이지 제작</label>
-              <label class="form-check-label"><input type="checkbox" name="svc" value="카탈로그 디자인"> 카탈로그 디자인</label>
-              <label class="form-check-label"><input type="checkbox" name="svc" value="ISMS 컨설팅"> ISMS 컨설팅</label>
-              <label class="form-check-label"><input type="checkbox" name="svc" value="취약점 점검·모의해킹"> 취약점 점검·모의해킹</label>
-              <label class="form-check-label"><input type="checkbox" name="svc" value="로컬 LLM AI"> 로컬 LLM AI</label>
-              <label class="form-check-label"><input type="checkbox" name="svc" value="기타 소프트웨어"> 기타 소프트웨어</label>
-            </div>
-
             <div class="form-section-title" data-i18n="qt_f_basic">기본 정보</div>
             <div class="form-row">
               <div class="form-group">
@@ -153,35 +142,22 @@
                 <input type="tel" name="phone" placeholder="010-0000-0000">
               </div>
             </div>
-
-            <div class="form-section-title" data-i18n="qt_f_project">프로젝트 정보</div>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" data-i18n="qt_f_budget">예산 범위</label>
-                <select name="budget">
-                  <option value="" data-i18n="qt_bud0">선택하세요</option>
-                  <option value="500만원 이하" data-i18n="qt_bud1">500만원 이하</option>
-                  <option value="500~1,000만원" data-i18n="qt_bud2">500 ~ 1,000만원</option>
-                  <option value="1,000~3,000만원" data-i18n="qt_bud3">1,000 ~ 3,000만원</option>
-                  <option value="3,000만원 이상" data-i18n="qt_bud4">3,000만원 이상</option>
-                  <option value="미정" data-i18n="qt_bud5">미정 / 협의</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label" data-i18n="qt_f_schedule">희망 완료 시기</label>
-                <select name="schedule">
-                  <option value="" data-i18n="qt_sch0">선택하세요</option>
-                  <option value="1개월 이내" data-i18n="qt_sch1">1개월 이내</option>
-                  <option value="1~3개월" data-i18n="qt_sch2">1 ~ 3개월</option>
-                  <option value="3~6개월" data-i18n="qt_sch3">3 ~ 6개월</option>
-                  <option value="6개월 이상" data-i18n="qt_sch4">6개월 이상</option>
-                  <option value="미정" data-i18n="qt_sch5">미정 / 협의</option>
-                </select>
-              </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="qt_f_svc_select">관심 서비스 (선택)</label>
+              <select name="svc">
+                <option value="" data-i18n="qt_svc0">선택하세요</option>
+                <option value="ERP 솔루션" data-i18n="s1t">ERP 솔루션</option>
+                <option value="홈페이지 제작" data-i18n="s2t">홈페이지 제작</option>
+                <option value="카탈로그 디자인" data-i18n="s3t">카탈로그 디자인</option>
+                <option value="ISMS 컨설팅" data-i18n="s4t">ISMS 컨설팅</option>
+                <option value="취약점 점검·모의해킹" data-i18n="s5t">취약점 점검 · 모의해킹</option>
+                <option value="로컬 LLM AI 솔루션" data-i18n="s6t">로컬 LLM AI 솔루션</option>
+                <option value="기타" data-i18n="qt_svc_other">기타 / 협의 필요</option>
+              </select>
             </div>
             <div class="form-group">
               <label class="form-label" data-i18n="qt_f_desc">프로젝트 내용 <span class="req">*</span></label>
-              <textarea name="desc" placeholder="프로젝트에 대해 간략히 설명해 주세요. 현재 상황, 원하는 결과, 참고 사례 등을 자유롭게 작성해 주세요." required></textarea>
+              <textarea name="desc" placeholder="어떤 프로젝트를 계획하고 계신가요? 예산이나 희망 일정이 있다면 함께 적어주시면 더 정확한 답변을 드릴 수 있습니다." required></textarea>
             </div>
 
             <label class="form-agree-label">
@@ -224,8 +200,7 @@
 function submitContact(e) {
   e.preventDefault();
   var f = e.target;
-  var svcs = [...f.querySelectorAll('input[name=svc]:checked')].map(function(c){return c.value}).join(', ') || '미선택';
-  var body = '[앤트로메타 문의]\n\n서비스: ' + svcs + '\n회사명: ' + f.company.value + '\n담당자: ' + f.name.value + '\n이메일: ' + f.email.value + '\n연락처: ' + (f.phone.value||'미기재') + '\n예산: ' + (f.budget.value||'미선택') + '\n일정: ' + (f.schedule.value||'미선택') + '\n\n내용:\n' + f.desc.value;
+  var body = '[앤트로메타 문의]\n\n관심 서비스: ' + (f.svc.value||'미선택') + '\n회사명: ' + f.company.value + '\n담당자: ' + f.name.value + '\n이메일: ' + f.email.value + '\n연락처: ' + (f.phone.value||'미기재') + '\n\n내용:\n' + f.desc.value;
   window.location.href = 'mailto:info@anthrometa.com?subject=[문의] ' + encodeURIComponent(f.company.value) + '&body=' + encodeURIComponent(body);
   document.getElementById('contact-form').style.display = 'none';
   document.getElementById('contact-success').style.display = 'block';
