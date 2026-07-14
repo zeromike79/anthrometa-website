@@ -44,6 +44,7 @@
     <a href="about.html"   data-page="about.html"    data-i18n="nav_about">회사소개</a>
     <a href="services.html" data-page="services.html" data-i18n="nav_services">서비스</a>
     <a href="clients.html"  data-page="clients.html"  data-i18n="nav_clients">거래처</a>
+    <a href="own-services.html" data-page="own-services.html" data-i18n="nav_own">직영 서비스</a>
     <a href="blog.html"    data-page="blog.html"     data-i18n="nav_blog">블로그</a>
     <a href="qa.html"       data-page="qa.html"       data-i18n="nav_qa">Q&amp;A</a>
     <a href="contact.html"  data-page="contact.html"  data-i18n="nav_contact">문의하기</a>
@@ -64,6 +65,7 @@
   <a href="about.html"   onclick="closeMenu()" data-page="about.html"   data-i18n="nav_about">회사소개</a>
   <a href="services.html" onclick="closeMenu()" data-page="services.html" data-i18n="nav_services">서비스</a>
   <a href="clients.html"  onclick="closeMenu()" data-page="clients.html"  data-i18n="nav_clients">거래처</a>
+  <a href="own-services.html" onclick="closeMenu()" data-page="own-services.html" data-i18n="nav_own">직영 서비스</a>
   <a href="blog.html"    onclick="closeMenu()" data-page="blog.html"    data-i18n="nav_blog">블로그</a>
   <a href="qa.html"       onclick="closeMenu()" data-page="qa.html"       data-i18n="nav_qa">Q&amp;A</a>
   <a href="contact.html"  onclick="closeMenu()" data-page="contact.html"  data-i18n="nav_contact">문의하기</a>
@@ -235,54 +237,62 @@
   </div>
 </section>
 
-<!-- CLIENT STRIP -->
-<section id="cl-strip">
+<!-- OWN SERVICES SLIDER -->
+<section id="own-strip">
   <div class="inner">
     <div class="sh reveal">
-      <div class="stag" data-i18n="cl_strip_tag">CLIENTS</div>
-      <h2 class="st" data-i18n="cl_strip_title">주요 거래처</h2>
-      <p class="sd" data-i18n="cl_trust">앤트로메타는 GS리테일, LS산전, 더기반, 기반테크, 우영테크, 벗앤벗, 바오비어 등 다양한 기업 및 다수의 의료기관 홈페이지를 제작·납품하며 신뢰를 쌓아왔습니다. 규모와 업종을 불문하고 최고의 서비스를 제공합니다.</p>
+      <div class="stag" data-i18n="own_tag">OWN SERVICES</div>
+      <h2 class="st" data-i18n="own_title">앤트로메타가 직접 운영하는 서비스</h2>
+      <p class="sd" data-i18n="own_desc">외주 제작을 넘어, 기획부터 개발·운영까지 직접 책임지는 자체 서비스입니다</p>
     </div>
-    <div class="cl-strip-inner reveal">
-      <div class="cb">
-        <span class="cb-name">GS리테일</span>
-        <span class="cb-svc" data-i18n="cb_svc1">보안 취약점 점검</span>
+    <div class="own-slider-wrap reveal">
+      <button class="own-slider-arrow own-slider-prev" onclick="ownSlide(-1)" aria-label="Previous">‹</button>
+      <div class="own-slider" id="ownSlider">
+        <a class="own-slide" href="own-services.html">
+          <img src="images/services/dropshipping-dashboard.jpg" alt="드랍쉬핑 자동화 관리자 대시보드" loading="lazy">
+          <div class="own-slide-body">
+            <div class="own-slide-num">01</div>
+            <h3 data-i18n="os1_name">드랍쉬핑 자동화 플랫폼</h3>
+            <p data-i18n="os1_sub">E-commerce Automation · AliExpress → 국내 마켓 무인 자동화</p>
+          </div>
+        </a>
+        <a class="own-slide" href="https://www.cinoz.kr" target="_blank" rel="noopener">
+          <img src="images/services/roblox-games.jpg" alt="cinoz.kr 로블록스 게임 정보 사이트" loading="lazy">
+          <div class="own-slide-body">
+            <div class="own-slide-num">02</div>
+            <h3 data-i18n="os2_name">cinoz.kr — 로블록스 게임 정보</h3>
+            <p data-i18n="os2_sub">Gaming Content Media · 로블록스 인기 게임 코드·정보 사이트</p>
+          </div>
+        </a>
+        <a class="own-slide" href="https://pinlocal.co.kr" target="_blank" rel="noopener">
+          <img src="images/services/pinlocal.jpg" alt="PinLocal 로컬 상권 발굴 플랫폼" loading="lazy">
+          <div class="own-slide-body">
+            <div class="own-slide-num">03</div>
+            <h3 data-i18n="os3_name">PinLocal — 로컬 시크릿 발굴 플랫폼</h3>
+            <p data-i18n="os3_sub">Public-Data Platform · 지역 상권 데이터 분석 서비스</p>
+          </div>
+        </a>
+        <a class="own-slide" href="https://mechanichub.kr" target="_blank" rel="noopener">
+          <img src="images/services/mechanichub.jpg" alt="MechanicHub 자동차 정비 정보 플랫폼" loading="lazy">
+          <div class="own-slide-body">
+            <div class="own-slide-num">04</div>
+            <h3 data-i18n="os4_name">MechanicHub — 자동차 정비 정보 플랫폼</h3>
+            <p data-i18n="os4_sub">Vertical Information Platform · 정비사 실제 작업기록 기반 DB</p>
+          </div>
+        </a>
+        <a class="own-slide" href="https://novelforge.co.kr" target="_blank" rel="noopener">
+          <img src="images/services/novelforge.jpg" alt="NovelForge 웹소설 연재 플랫폼" loading="lazy">
+          <div class="own-slide-body">
+            <div class="own-slide-num">05</div>
+            <h3 data-i18n="os5_name">NovelForge — 웹소설 연재 플랫폼</h3>
+            <p data-i18n="os5_sub">Web Novel Platform · 자동 생성 파이프라인 기반 매일 연재 서비스</p>
+          </div>
+        </a>
       </div>
-      <div class="cb">
-        <span class="cb-name">LS산전</span>
-        <span class="cb-svc" data-i18n="cb_svc8">모의해킹</span>
-      </div>
-      <div class="cb">
-        <span class="cb-name">㈜ 기반테크</span>
-        <span class="cb-svc" data-i18n="cb_svc3">스마트팜 카탈+홈피</span>
-      </div>
-      <div class="cb">
-        <span class="cb-name">㈜ 벗앤벗</span>
-        <span class="cb-svc" data-i18n="cb_svc5">카탈로그 · IT MOU</span>
-      </div>
-      <div class="cb">
-        <span class="cb-name">고양 시니어 클럽</span>
-        <span class="cb-svc" data-i18n="cb_svc9">홈페이지 제작</span>
-      </div>
-      <div class="cb">
-        <span class="cb-name">바오비어</span>
-        <span class="cb-svc" data-i18n="cb_svc10">프랜차이즈 홈페이지</span>
-      </div>
-      <div class="cb">
-        <span class="cb-name">우영테크</span>
-        <span class="cb-svc" data-i18n="cb_svc4">다국어 홈피 · ERP</span>
-      </div>
-      <div class="cb">
-        <span class="cb-name" data-i18n="cl_hosp_name">의료기관 다수</span>
-        <span class="cb-svc" data-i18n="cb_svc6">홈페이지 제작</span>
-      </div>
-      <div class="cb">
-        <span class="cb-name">대한신경과협회</span>
-        <span class="cb-svc" data-i18n="cb_svc7">홈페이지 <span style="color:var(--yellow)">준비중</span></span>
-      </div>
+      <button class="own-slider-arrow own-slider-next" onclick="ownSlide(1)" aria-label="Next">›</button>
     </div>
     <div class="cl-more reveal">
-      <a href="clients.html" class="btn-s" data-i18n="cl_link">거래처 더보기 →</a>
+      <a href="own-services.html" class="btn-s" data-i18n="own_link">직영 서비스 더보기 →</a>
     </div>
   </div>
 </section>

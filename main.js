@@ -2,7 +2,7 @@
 
 const T = {
   ko:{
-    nav_home:'홈', nav_about:'회사소개', nav_services:'서비스', nav_clients:'거래처', nav_blog:'블로그', nav_qa:'Q&A', nav_contact:'문의하기', nav_quote:'견적문의', sc_cta:'이 서비스 문의하기 →',
+    nav_home:'홈', nav_about:'회사소개', nav_services:'서비스', nav_clients:'거래처', nav_own:'직영 서비스', nav_blog:'블로그', nav_qa:'Q&A', nav_contact:'문의하기', nav_quote:'견적문의', sc_cta:'이 서비스 문의하기 →', own_link:'직영 서비스 더보기 →',
     /* About */
     ab_tag:'ABOUT US', ab_title:'앤트로메타 소개', ab_sub:'기술로 비즈니스의 내일을 설계하는 IT 솔루션 전문기업',
     ab_mv_tag:'MISSION & VISION', ab_mv_title:'미션과 비전',
@@ -249,7 +249,7 @@ const T = {
     os5_l3:'작품별 자동 연재 스케줄링, 다장르 동시 운영'
   },
   en:{
-    nav_home:'Home', nav_about:'About', nav_services:'Services', nav_clients:'Clients', nav_blog:'Blog', nav_qa:'Q&A', nav_contact:'Contact', nav_quote:'Get Quote', sc_cta:'Inquire about this service →',
+    nav_home:'Home', nav_about:'About', nav_services:'Services', nav_clients:'Clients', nav_own:'Own Services', nav_blog:'Blog', nav_qa:'Q&A', nav_contact:'Contact', nav_quote:'Get Quote', sc_cta:'Inquire about this service →', own_link:'More own services →',
     ab_tag:'ABOUT US', ab_title:'About AnthroMeta', ab_sub:'The IT solutions company designing tomorrow\'s business through technology',
     ab_mv_tag:'MISSION & VISION', ab_mv_title:'Mission & Vision',
     ab_mission_h:'🎯 Mission', ab_mission_p:'We provide practical and sustainable IT solutions to help small and mid-sized enterprises achieve digital transformation and build stronger competitiveness.',
@@ -466,7 +466,7 @@ const T = {
     os5_l3:'Per-novel auto-serialization scheduling across multiple genres at once'
   },
   ja:{
-    nav_home:'ホーム', nav_about:'会社紹介', nav_services:'サービス', nav_clients:'取引先', nav_blog:'ブログ', nav_qa:'Q&A', nav_contact:'お問い合わせ', nav_quote:'見積依頼', sc_cta:'このサービスへお問い合わせ →',
+    nav_home:'ホーム', nav_about:'会社紹介', nav_services:'サービス', nav_clients:'取引先', nav_own:'直営サービス', nav_blog:'ブログ', nav_qa:'Q&A', nav_contact:'お問い合わせ', nav_quote:'見積依頼', sc_cta:'このサービスへお問い合わせ →', own_link:'直営サービスをもっと見る →',
     ab_tag:'ABOUT US', ab_title:'アンスロメタ紹介', ab_sub:'技術でビジネスの明日を設計するITソリューション専門企業',
     ab_mv_tag:'MISSION & VISION', ab_mv_title:'ミッションとビジョン',
     ab_mission_h:'🎯 ミッション', ab_mission_p:'中小・中堅企業が最新のIT技術によりデジタル変革を実現し、より高い競争力を身につけられるよう、実践的で持続可能なソリューションを提供します。',
@@ -717,6 +717,15 @@ window.addEventListener('scroll', () => {
   const h = document.getElementById('hdr');
   if (h) h.classList.toggle('scrolled', scrollY > 20);
 });
+
+/* Own-services slider (index.html) */
+function ownSlide(dir) {
+  const el = document.getElementById('ownSlider');
+  if (!el) return;
+  const card = el.querySelector('.own-slide');
+  const step = card ? card.getBoundingClientRect().width + 19.2 : 280; // 1.2rem gap
+  el.scrollBy({ left: dir * step, behavior: 'smooth' });
+}
 
 /* Mobile menu */
 function toggleMenu() {
