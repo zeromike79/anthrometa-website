@@ -241,7 +241,12 @@ const T = {
     os4_name:'MechanicHub — 자동차 정비 정보 플랫폼', os4_sub:'Vertical Information Platform · 정비사 실제 작업기록 기반 DB',
     os4_desc:'정비사가 직접 기록한 실제 수리 사례와 400개 이상의 고장코드 데이터베이스를 기반으로 한 자동차 정비 정보 플랫폼입니다. 차종·세대·트림별 정비 규격, 고장코드별 실제 수리 사례 연결, 정비사 포트폴리오와 정비소 대시보드, Q&A 커뮤니티까지 하나의 서비스 안에서 통합 제공합니다.',
     os4_l1:'실제 정비 사례 2,600건 이상 · 고장코드 400여 개 DB', os4_l2:'차종별 정기 점검 규격 + 고장코드 연계 수리 사례 제공',
-    os4_l3:'정비사 포트폴리오·정비소 대시보드·Q&A 커뮤니티 통합'
+    os4_l3:'정비사 포트폴리오·정비소 대시보드·Q&A 커뮤니티 통합',
+    os5_cat:'자체 서비스 · 콘텐츠 미디어', os5_t1:'웹소설 자동 생성', os5_t2:'품질 게이트', os5_t3:'다장르 연재',
+    os5_name:'NovelForge — 웹소설 연재 플랫폼', os5_sub:'Web Novel Platform · 자동 생성 파이프라인 기반 매일 연재 서비스',
+    os5_desc:'캐릭터·세계관·복선을 데이터베이스로 관리해 일관성을 지키면서 씬 단위로 소설을 자동 생성하는 웹소설 연재 플랫폼입니다. 분량·반복·시점·설정 모순 등을 규칙 기반으로 검증하는 품질 게이트를 통과한 원고만 관리자 승인을 거쳐 발행되며, 현대판타지·헌터물·회귀물·무협·이세계·로맨스판타지 등 다양한 장르를 동시에 연재합니다.',
+    os5_l1:'씬 단위 생성 + Story Bible 기반 일관성 관리', os5_l2:'분량·반복·시점·세계관 모순을 검증하는 자동 품질 게이트',
+    os5_l3:'작품별 자동 연재 스케줄링, 다장르 동시 운영'
   },
   en:{
     nav_home:'Home', nav_about:'About', nav_services:'Services', nav_clients:'Clients', nav_blog:'Blog', nav_qa:'Q&A', nav_contact:'Contact', nav_quote:'Get Quote', sc_cta:'Inquire about this service →',
@@ -453,7 +458,12 @@ const T = {
     os4_name:'MechanicHub — Auto Repair Information Platform', os4_sub:'Vertical Information Platform · Database Built on Real Mechanic Work Records',
     os4_desc:'An auto repair information platform built on real repair cases logged directly by mechanics and a database of 400+ fault codes. It brings together maintenance specs by make/generation/trim, real repair cases linked to fault codes, mechanic portfolios and shop dashboards, and a Q&A community — all in one service.',
     os4_l1:'2,600+ real repair cases · 400+ fault codes in the database', os4_l2:'Maintenance specs by vehicle plus fault-code-linked repair cases',
-    os4_l3:'Mechanic portfolios, shop dashboards, and Q&A community, all integrated'
+    os4_l3:'Mechanic portfolios, shop dashboards, and Q&A community, all integrated',
+    os5_cat:'In-house · Content media', os5_t1:'Automated Web-Novel Generation', os5_t2:'Quality Gate', os5_t3:'Multi-Genre Serialization',
+    os5_name:'NovelForge — Web Novel Platform', os5_sub:'Web Novel Platform · Daily Serialization Powered by an Automated Generation Pipeline',
+    os5_desc:"A web-novel serialization platform that generates fiction scene-by-scene while a database of characters, world facts, and plot threads keeps everything consistent. Only manuscripts that pass a rule-based quality gate — checking length, repetition, point-of-view, and world-fact contradictions — go live after admin approval, across genres like modern fantasy, hunter, regression, murim, isekai, and romance fantasy running side by side.",
+    os5_l1:'Scene-by-scene generation with Story Bible-driven consistency', os5_l2:'Automated quality gate checking length, repetition, POV, and world-fact contradictions',
+    os5_l3:'Per-novel auto-serialization scheduling across multiple genres at once'
   },
   ja:{
     nav_home:'ホーム', nav_about:'会社紹介', nav_services:'サービス', nav_clients:'取引先', nav_blog:'ブログ', nav_qa:'Q&A', nav_contact:'お問い合わせ', nav_quote:'見積依頼', sc_cta:'このサービスへお問い合わせ →',
@@ -666,7 +676,12 @@ const T = {
     os4_name:'MechanicHub — 自動車整備情報プラットフォーム', os4_sub:'Vertical Information Platform · 整備士の実作業記録に基づくDB',
     os4_desc:'整備士が直接記録した実際の修理事例と400以上の故障コードデータベースに基づく自動車整備情報プラットフォームです。車種・世代・トリム別の整備規格、故障コードに紐づく実際の修理事例、整備士ポートフォリオと整備工場ダッシュボード、Q&Aコミュニティまで一つのサービスで統合提供します。',
     os4_l1:'実際の整備事例2,600件以上・故障コード400種以上のDB', os4_l2:'車種別定期点検規格＋故障コード連携の修理事例を提供',
-    os4_l3:'整備士ポートフォリオ・整備工場ダッシュボード・Q&Aコミュニティを統合'
+    os4_l3:'整備士ポートフォリオ・整備工場ダッシュボード・Q&Aコミュニティを統合',
+    os5_cat:'自社サービス・コンテンツメディア', os5_t1:'ウェブ小説自動生成', os5_t2:'品質ゲート', os5_t3:'多ジャンル連載',
+    os5_name:'NovelForge — ウェブ小説連載プラットフォーム', os5_sub:'Web Novel Platform · 自動生成パイプラインによる毎日連載サービス',
+    os5_desc:'キャラクター・世界観・伏線をデータベースで管理して一貫性を保ちながら、シーン単位で小説を自動生成するウェブ小説連載プラットフォームです。文字数・重複・視点・設定矛盾などをルールベースで検証する品質ゲートを通過した原稿だけが管理者承認を経て公開され、現代ファンタジー・ハンター物・回帰物・武侠・異世界・ロマンスファンタジーなど多様なジャンルを同時に連載します。',
+    os5_l1:'シーン単位の生成＋Story Bibleによる一貫性管理', os5_l2:'文字数・重複・視点・世界観の矛盾を検証する自動品質ゲート',
+    os5_l3:'作品別自動連載スケジューリング、多ジャンル同時運営'
   }
 };
 
