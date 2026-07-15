@@ -246,7 +246,12 @@ const T = {
     os5_name:'NovelForge — 웹소설 연재 플랫폼', os5_sub:'Web Novel Platform · 자동 생성 파이프라인 기반 매일 연재 서비스',
     os5_desc:'캐릭터·세계관·복선을 데이터베이스로 관리해 일관성을 지키면서 씬 단위로 소설을 자동 생성하는 웹소설 연재 플랫폼입니다. 분량·반복·시점·설정 모순 등을 규칙 기반으로 검증하는 품질 게이트를 통과한 원고만 관리자 승인을 거쳐 발행되며, 현대판타지·헌터물·회귀물·무협·이세계·로맨스판타지 등 다양한 장르를 동시에 연재합니다.',
     os5_l1:'씬 단위 생성 + Story Bible 기반 일관성 관리', os5_l2:'분량·반복·시점·세계관 모순을 검증하는 자동 품질 게이트',
-    os5_l3:'작품별 자동 연재 스케줄링, 다장르 동시 운영'
+    os5_l3:'작품별 자동 연재 스케줄링, 다장르 동시 운영',
+    os6_cat:'자체 서비스 · 비공개 운영', os6_t1:'알고리즘 트레이딩', os6_t2:'리스크 관리 엔진', os6_t3:'다중 코인 운영',
+    os6_name:'코인 자동매매 시스템', os6_sub:'Algorithmic Trading System · 다중 레이어 신호 기반 업비트 자동매매',
+    os6_desc:'고래 동향·거시경제·중기 모멘텀·실시간 심리를 종합하는 4레이어 신호 엔진으로 진입·청산을 판단하는 자동매매 시스템입니다. 2020~2024년 실데이터로 백테스트 검증을 마쳤으며, 손절·포지션 사이징·코인별 자본 한도를 코드 레벨에서 강제하는 리스크 관리 엔진을 함께 운영합니다. 비트코인 전용 신호 외에도 가격·거래량·시장심리 기반의 별도 신호 엔진을 얹어 알트코인까지 독립 프로세스로 동시 운영합니다.',
+    os6_l1:'고래·거시·중기·실시간 4레이어 신호 엔진, 2020~2024 백테스트 검증', os6_l2:'손절·포지션 사이징·코인별 자본 한도를 코드로 강제하는 리스크 관리',
+    os6_l3:'코인별 독립 프로세스 운영으로 리스크 격리, 실시간 대시보드 모니터링', os6_l4:'실거래 자금이 오가는 내부 운영 도구라 별도 공개 링크 없이 소개'
   },
   en:{
     nav_home:'Home', nav_about:'About', nav_services:'Services', nav_clients:'Clients', nav_own:'Own Services', nav_blog:'Blog', nav_qa:'Q&A', nav_contact:'Contact', nav_quote:'Get Quote', sc_cta:'Inquire about this service →', own_link:'More own services →',
@@ -463,7 +468,12 @@ const T = {
     os5_name:'NovelForge — Web Novel Platform', os5_sub:'Web Novel Platform · Daily Serialization Powered by an Automated Generation Pipeline',
     os5_desc:"A web-novel serialization platform that generates fiction scene-by-scene while a database of characters, world facts, and plot threads keeps everything consistent. Only manuscripts that pass a rule-based quality gate — checking length, repetition, point-of-view, and world-fact contradictions — go live after admin approval, across genres like modern fantasy, hunter, regression, murim, isekai, and romance fantasy running side by side.",
     os5_l1:'Scene-by-scene generation with Story Bible-driven consistency', os5_l2:'Automated quality gate checking length, repetition, POV, and world-fact contradictions',
-    os5_l3:'Per-novel auto-serialization scheduling across multiple genres at once'
+    os5_l3:'Per-novel auto-serialization scheduling across multiple genres at once',
+    os6_cat:'In-house · Private operation', os6_t1:'Algorithmic Trading', os6_t2:'Risk Management Engine', os6_t3:'Multi-Coin Operation',
+    os6_name:'Crypto Auto-Trading System', os6_sub:'Algorithmic Trading System · Multi-layer signal-driven automated trading on Upbit',
+    os6_desc:"An automated trading system that times entries and exits using a 4-layer signal engine combining whale activity, macroeconomics, mid-term momentum, and real-time sentiment. Backtested against real 2020–2024 data, it runs alongside a risk-management engine that enforces stop-losses, position sizing, and per-coin capital caps at the code level. Beyond the Bitcoin-specific signal engine, a separate price/volume/sentiment-based engine drives altcoin trading as independent, isolated processes.",
+    os6_l1:'4-layer signal engine (whale, macro, mid-term, real-time), backtested 2020–2024', os6_l2:'Code-enforced risk management: stop-loss, position sizing, per-coin capital caps',
+    os6_l3:'Risk isolation via independent per-coin processes, live dashboard monitoring', os6_l4:'Internal tool handling real trading funds — shown here without a public link'
   },
   ja:{
     nav_home:'ホーム', nav_about:'会社紹介', nav_services:'サービス', nav_clients:'取引先', nav_own:'直営サービス', nav_blog:'ブログ', nav_qa:'Q&A', nav_contact:'お問い合わせ', nav_quote:'見積依頼', sc_cta:'このサービスへお問い合わせ →', own_link:'直営サービスをもっと見る →',
@@ -681,7 +691,12 @@ const T = {
     os5_name:'NovelForge — ウェブ小説連載プラットフォーム', os5_sub:'Web Novel Platform · 自動生成パイプラインによる毎日連載サービス',
     os5_desc:'キャラクター・世界観・伏線をデータベースで管理して一貫性を保ちながら、シーン単位で小説を自動生成するウェブ小説連載プラットフォームです。文字数・重複・視点・設定矛盾などをルールベースで検証する品質ゲートを通過した原稿だけが管理者承認を経て公開され、現代ファンタジー・ハンター物・回帰物・武侠・異世界・ロマンスファンタジーなど多様なジャンルを同時に連載します。',
     os5_l1:'シーン単位の生成＋Story Bibleによる一貫性管理', os5_l2:'文字数・重複・視点・世界観の矛盾を検証する自動品質ゲート',
-    os5_l3:'作品別自動連載スケジューリング、多ジャンル同時運営'
+    os5_l3:'作品別自動連載スケジューリング、多ジャンル同時運営',
+    os6_cat:'自社サービス・非公開運営', os6_t1:'アルゴリズムトレーディング', os6_t2:'リスク管理エンジン', os6_t3:'複数コイン運用',
+    os6_name:'コイン自動売買システム', os6_sub:'Algorithmic Trading System · 複数レイヤーシグナルベースのアップビット自動売買',
+    os6_desc:'クジラの動向・マクロ経済・中期モメンタム・リアルタイム心理を統合する4レイヤーシグナルエンジンでエントリー・イグジットを判断する自動売買システムです。2020〜2024年の実データでバックテスト検証済みで、損切り・ポジションサイジング・コイン別資本上限をコードレベルで強制するリスク管理エンジンを併せて運用しています。ビットコイン専用シグナルに加え、価格・出来高・市場心理に基づく別のシグナルエンジンを搭載し、アルトコインまで独立プロセスで同時運用します。',
+    os6_l1:'クジラ・マクロ・中期・リアルタイムの4レイヤーシグナルエンジン、2020〜2024バックテスト検証', os6_l2:'損切り・ポジションサイジング・コイン別資本上限をコードで強制するリスク管理',
+    os6_l3:'コイン別独立プロセス運用でリスクを分離、リアルタイムダッシュボードでモニタリング', os6_l4:'実取引資金を扱う社内運用ツールのため、公開リンクなしでご紹介'
   }
 };
 
