@@ -251,7 +251,12 @@ const T = {
     os6_name:'코인 자동매매 시스템', os6_sub:'Algorithmic Trading System · 다중 레이어 신호 기반 업비트 자동매매',
     os6_desc:'고래 동향·거시경제·중기 모멘텀·실시간 심리를 종합하는 4레이어 신호 엔진으로 진입·청산을 판단하는 자동매매 시스템입니다. 2020~2024년 실데이터로 백테스트 검증을 마쳤으며, 손절·포지션 사이징·코인별 자본 한도를 코드 레벨에서 강제하는 리스크 관리 엔진을 함께 운영합니다. 비트코인 전용 신호 외에도 가격·거래량·시장심리 기반의 별도 신호 엔진을 얹어 알트코인까지 독립 프로세스로 동시 운영합니다.',
     os6_l1:'고래·거시·중기·실시간 4레이어 신호 엔진, 2020~2024 백테스트 검증', os6_l2:'손절·포지션 사이징·코인별 자본 한도를 코드로 강제하는 리스크 관리',
-    os6_l3:'코인별 독립 프로세스 운영으로 리스크 격리, 실시간 대시보드 모니터링', os6_l4:'실거래 자금이 오가는 내부 운영 도구라 별도 공개 링크 없이 소개'
+    os6_l3:'코인별 독립 프로세스 운영으로 리스크 격리, 실시간 대시보드 모니터링', os6_l4:'실거래 자금이 오가는 내부 운영 도구라 별도 공개 링크 없이 소개',
+    os7_cat:'자체 서비스 · 비공개 운영', os7_t1:'종단데이터 예측', os7_t2:'대학 매칭 엔진', os7_t3:'학부모 리포트 자동화',
+    os7_name:'STOP — 입시 컨설팅 데이터 플랫폼', os7_sub:'Education Consulting Platform · 국가 승인 종단연구 데이터 기반 진로 설계 툴',
+    os7_desc:'국가 공인 한국교육종단연구(KELS/KEDI) 패널 데이터를 기반으로 학생의 성적 궤적을 분석하고 진로를 설계하는 학원 전용 컨설팅 플랫폼입니다. 중1 실력 데이터부터 고3까지 이어지는 장기 추세로 미래 성적과 진학 확률을 예측하고, 실제 대학 46개교의 공식 입시결과와 비교해 안정·적정·도전권 학과를 매칭합니다. 상담 현장에서 바로 활용할 수 있는 학부모 리포트(인쇄·이메일)까지 자동으로 생성합니다.',
+    os7_l1:'KEDI 종단연구 패널 기반 성적 궤적·진학 확률 예측', os7_l2:'대학 46개교 실제 입시결과로 수시·정시 안정·적정·도전권 매칭',
+    os7_l3:'선배 가이드·과목별 학습 설계·학부모 리포트 자동 생성', os7_l4:'실제 원생 데이터를 다루는 내부 운영 도구라 별도 공개 링크 없이 소개'
   },
   en:{
     nav_home:'Home', nav_about:'About', nav_services:'Services', nav_clients:'Clients', nav_own:'Own Services', nav_blog:'Blog', nav_qa:'Q&A', nav_contact:'Contact', nav_quote:'Get Quote', sc_cta:'Inquire about this service →', own_link:'More own services →',
@@ -473,7 +478,12 @@ const T = {
     os6_name:'Crypto Auto-Trading System', os6_sub:'Algorithmic Trading System · Multi-layer signal-driven automated trading on Upbit',
     os6_desc:"An automated trading system that times entries and exits using a 4-layer signal engine combining whale activity, macroeconomics, mid-term momentum, and real-time sentiment. Backtested against real 2020–2024 data, it runs alongside a risk-management engine that enforces stop-losses, position sizing, and per-coin capital caps at the code level. Beyond the Bitcoin-specific signal engine, a separate price/volume/sentiment-based engine drives altcoin trading as independent, isolated processes.",
     os6_l1:'4-layer signal engine (whale, macro, mid-term, real-time), backtested 2020–2024', os6_l2:'Code-enforced risk management: stop-loss, position sizing, per-coin capital caps',
-    os6_l3:'Risk isolation via independent per-coin processes, live dashboard monitoring', os6_l4:'Internal tool handling real trading funds — shown here without a public link'
+    os6_l3:'Risk isolation via independent per-coin processes, live dashboard monitoring', os6_l4:'Internal tool handling real trading funds — shown here without a public link',
+    os7_cat:'In-house · Private operation', os7_t1:'Longitudinal Data Prediction', os7_t2:'University Matching Engine', os7_t3:'Automated Parent Reports',
+    os7_name:'STOP — Admissions Consulting Data Platform', os7_sub:'Education Consulting Platform · Career-planning tool built on government-approved longitudinal research data',
+    os7_desc:"An admissions-consulting platform built for academies, powered by the government-approved Korean Education & Employment Longitudinal Study (KELS/KEDI) panel data to trace each student's grade trajectory and plan their academic path. It projects future grades and admission odds from a long-term trend spanning middle school 1st grade through senior year, then matches safety/match/reach departments by comparing against the official admission results of 46 real universities. It even auto-generates parent-facing reports (print and email) ready to use on the spot during consultations.",
+    os7_l1:'Grade-trajectory and admission-probability prediction from the KEDI longitudinal panel', os7_l2:'Safety/match/reach department matching against real admission results from 46 universities',
+    os7_l3:'Auto-generated senior guides, subject-level study plans, and parent reports', os7_l4:'Internal tool handling real student data — shown here without a public link'
   },
   ja:{
     nav_home:'ホーム', nav_about:'会社紹介', nav_services:'サービス', nav_clients:'取引先', nav_own:'直営サービス', nav_blog:'ブログ', nav_qa:'Q&A', nav_contact:'お問い合わせ', nav_quote:'見積依頼', sc_cta:'このサービスへお問い合わせ →', own_link:'直営サービスをもっと見る →',
@@ -696,7 +706,12 @@ const T = {
     os6_name:'コイン自動売買システム', os6_sub:'Algorithmic Trading System · 複数レイヤーシグナルベースのアップビット自動売買',
     os6_desc:'クジラの動向・マクロ経済・中期モメンタム・リアルタイム心理を統合する4レイヤーシグナルエンジンでエントリー・イグジットを判断する自動売買システムです。2020〜2024年の実データでバックテスト検証済みで、損切り・ポジションサイジング・コイン別資本上限をコードレベルで強制するリスク管理エンジンを併せて運用しています。ビットコイン専用シグナルに加え、価格・出来高・市場心理に基づく別のシグナルエンジンを搭載し、アルトコインまで独立プロセスで同時運用します。',
     os6_l1:'クジラ・マクロ・中期・リアルタイムの4レイヤーシグナルエンジン、2020〜2024バックテスト検証', os6_l2:'損切り・ポジションサイジング・コイン別資本上限をコードで強制するリスク管理',
-    os6_l3:'コイン別独立プロセス運用でリスクを分離、リアルタイムダッシュボードでモニタリング', os6_l4:'実取引資金を扱う社内運用ツールのため、公開リンクなしでご紹介'
+    os6_l3:'コイン別独立プロセス運用でリスクを分離、リアルタイムダッシュボードでモニタリング', os6_l4:'実取引資金を扱う社内運用ツールのため、公開リンクなしでご紹介',
+    os7_cat:'自社サービス・非公開運営', os7_t1:'縦断データ予測', os7_t2:'大学マッチングエンジン', os7_t3:'保護者レポート自動化',
+    os7_name:'STOP — 進学コンサルティングデータプラットフォーム', os7_sub:'Education Consulting Platform · 国家承認縦断研究データに基づく進路設計ツール',
+    os7_desc:'国家公認の韓国教育縦断研究(KELS/KEDI)パネルデータをもとに、生徒の成績推移を分析して進路を設計する塾専用コンサルティングプラットフォームです。中1の実力データから高3まで続く長期トレンドで将来の成績と進学確率を予測し、実際の大学46校の公式入試結果と比較して安定・適正・挑戦圏の学科をマッチングします。相談の現場でそのまま使える保護者向けレポート(印刷・メール)まで自動生成します。',
+    os7_l1:'KEDI縦断研究パネルに基づく成績推移・進学確率予測', os7_l2:'大学46校の実際の入試結果による安定・適正・挑戦圏マッチング',
+    os7_l3:'先輩ガイド・科目別学習設計・保護者レポートの自動生成', os7_l4:'実際の生徒データを扱う社内運用ツールのため、公開リンクなしでご紹介'
   }
 };
 
